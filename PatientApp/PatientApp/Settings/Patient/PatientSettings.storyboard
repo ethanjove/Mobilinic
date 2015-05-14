@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HcL-vX-AzW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Patient SettingsVC-->
+        <scene sceneID="Xt0-t8-pja">
+            <objects>
+                <tableViewController storyboardIdentifier="PatientSettingsView" id="HcL-vX-AzW" customClass="PatientSettingsVC" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="CDc-yk-xsH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="hJt-jz-smc">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Name" rowHeight="135" id="Sw4-S7-Kn6">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sw4-S7-Kn6" id="nwu-WY-NJl">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-HG-pol">
+                                                    <rect key="frame" x="15" y="22" width="477" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uju-Hh-3TK">
+                                                    <rect key="frame" x="535" y="9" width="51" height="43"/>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Sz-uk-z8e">
+                                                    <rect key="frame" x="15" y="59" width="189" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="nwu-WY-NJl" id="GrT-lT-KyS"/>
+                                                    </connections>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7wg-HZ-K0y">
+                                                    <rect key="frame" x="15" y="91" width="189" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="HcL-vX-AzW" id="kh0-hj-uim"/>
+                                                    </connections>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGl-Os-dYN">
+                                                    <rect key="frame" x="212" y="87" width="40" height="40"/>
+                                                    <state key="normal" image="iconCheckmark">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="saveNameButtonPressed:" destination="HcL-vX-AzW" eventType="touchUpInside" id="hKr-4d-GfM"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.98918876259999999" green="0.98918876259999999" blue="0.98918876259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="uvz-HG-pol" firstAttribute="top" secondItem="nwu-WY-NJl" secondAttribute="topMargin" constant="14" id="VGW-sN-A2C"/>
+                                                <constraint firstItem="uvz-HG-pol" firstAttribute="leading" secondItem="nwu-WY-NJl" secondAttribute="leadingMargin" constant="7" id="mnq-hE-bFt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uvz-HG-pol" secondAttribute="trailing" constant="100" id="tfe-4m-2yN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="cellGender" selectionStyle="default" indentationWidth="10" reuseIdentifier="Gender" id="ihn-zm-ZVa">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ihn-zm-ZVa" id="HGt-kr-2Ax">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="genderSegment" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-oX-4dB">
+                                                    <rect key="frame" x="134" y="13" width="124" height="29"/>
+                                                    <segments>
+                                                        <segment title="Male"/>
+                                                        <segment title="Female"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="genderSegmentValueChanged:" destination="HcL-vX-AzW" eventType="valueChanged" id="lZg-pZ-MMf"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgS-Ua-HKJ">
+                                                    <rect key="frame" x="15" y="17" width="68" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-dd-5Z3">
+                                                    <rect key="frame" x="150" y="17" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <gestureRecognizers/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateOfBirth" rowHeight="202" id="DKT-MP-kqj">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="DKT-MP-kqj" id="pUT-gC-IaS">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date of Birth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tic-Lj-r7d">
+                                                    <rect key="frame" x="15" y="17" width="107" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <datePicker contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="dobDatePicker" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-DQ-ex0">
+                                                    <rect key="frame" x="8" y="34" width="248" height="162"/>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="446103166.83015501">
+                                                        <!--2015-02-20 05:32:46 +0000-->
+                                                    </date>
+                                                    <connections>
+                                                        <action selector="dobValueChanged:" destination="HcL-vX-AzW" eventType="valueChanged" id="ewr-9Y-je8"/>
+                                                    </connections>
+                                                </datePicker>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIW-4Q-2a3">
+                                                    <rect key="frame" x="150" y="17" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoN-6W-vK9">
+                                                    <rect key="frame" x="264" y="95" width="40" height="40"/>
+                                                    <state key="normal" image="iconCheckmark">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="dobSaveButtonPressed:" destination="HcL-vX-AzW" eventType="touchUpInside" id="0qJ-Qe-GUU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BloodType" rowHeight="122" id="FUI-5m-WaW">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="bloodTypeSelectionView" tableViewCell="FUI-5m-WaW" id="9Uw-4c-KOi">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fz-Qy-rmi">
+                                                    <rect key="frame" x="15" y="17" width="99" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sR4-K8-FqM">
+                                                    <rect key="frame" x="71" y="48" width="300" height="67"/>
+                                                    <subviews>
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="bloodTypeSegment" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TRk-BJ-ozG">
+                                                            <rect key="frame" x="8" y="0.0" width="157" height="29"/>
+                                                            <segments>
+                                                                <segment title="A"/>
+                                                                <segment title="B"/>
+                                                                <segment title="AB"/>
+                                                                <segment title="0"/>
+                                                            </segments>
+                                                            <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <connections>
+                                                                <action selector="bloodTypeSegmentValueChanged:" destination="HcL-vX-AzW" eventType="valueChanged" id="x9s-8G-4Tm"/>
+                                                            </connections>
+                                                        </segmentedControl>
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="bloodTypeRhSegment" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-go-jxU">
+                                                            <rect key="frame" x="48" y="31" width="77" height="29"/>
+                                                            <segments>
+                                                                <segment title="+"/>
+                                                                <segment title="-"/>
+                                                            </segments>
+                                                            <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <connections>
+                                                                <action selector="bloodTypeRhSegmentValueChanged:" destination="HcL-vX-AzW" eventType="valueChanged" id="586-qZ-H2q"/>
+                                                            </connections>
+                                                        </segmentedControl>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XH-XO-nYd">
+                                                            <rect key="frame" x="178" y="14" width="40" height="40"/>
+                                                            <state key="normal" image="iconCheckmark">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="bloodTypeSaveButtonPressed:" destination="HcL-vX-AzW" eventType="touchUpInside" id="npy-7R-mOt"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTU-yg-h9Z">
+                                                    <rect key="frame" x="150" y="17" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Height" rowHeight="190" id="4mQ-9R-CVN">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4mQ-9R-CVN" id="uU6-lp-qsu">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em2-vR-50w">
+                                                    <rect key="frame" x="15" y="17" width="68" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <pickerView tag="10" contentMode="left" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-SR-mZE">
+                                                    <rect key="frame" x="108" y="28" width="105" height="162"/>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="HcL-vX-AzW" id="IVt-7N-vgo"/>
+                                                    </connections>
+                                                </pickerView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkP-Iy-wby">
+                                                    <rect key="frame" x="221" y="88" width="40" height="40"/>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="iconCheckmark">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="heightSaveButtonPressed:" destination="HcL-vX-AzW" eventType="touchUpInside" id="F2Q-0a-JV6"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-eo-1VH">
+                                                    <rect key="frame" x="150" y="17" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PbE-h4-bum">
+                                                    <rect key="frame" x="15" y="94" width="90" height="29"/>
+                                                    <segments>
+                                                        <segment title="cm"/>
+                                                        <segment title="inch"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="heightUnitChanged:" destination="HcL-vX-AzW" eventType="valueChanged" id="gsQ-f4-N7E"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Weight" rowHeight="200" id="a48-es-S7A">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a48-es-S7A" id="asu-m4-vT7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83B-1U-Oyb">
+                                                    <rect key="frame" x="15" y="17" width="80" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <pickerView tag="20" contentMode="left" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sgk-xN-pUw">
+                                                    <rect key="frame" x="109" y="33" width="155" height="162"/>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="HcL-vX-AzW" id="I70-SG-4uV"/>
+                                                    </connections>
+                                                </pickerView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-OC-wiw">
+                                                    <rect key="frame" x="150" y="17" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZc-Mx-2kt">
+                                                    <rect key="frame" x="272" y="94" width="40" height="40"/>
+                                                    <state key="normal" image="iconCheckmark">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="weightSaveButtonPressed:" destination="HcL-vX-AzW" eventType="touchUpInside" id="cU4-31-3Gc"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Donor" rowHeight="200" id="YYN-DU-Xzd">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YYN-DU-Xzd" id="EfK-4m-2F7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Organ Donor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-jK-Mmp">
+                                                    <rect key="frame" x="15" y="17" width="117" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-cx-QX3">
+                                                    <rect key="frame" x="150" y="17" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wEC-jy-e3h" customClass="MyUISegmentedControl" customModule="PatientApp" customModuleProvider="target">
+                                                    <rect key="frame" x="140" y="14" width="140" height="29"/>
+                                                    <segments>
+                                                        <segment title="Yes"/>
+                                                        <segment title="No"/>
+                                                        <segment title="---"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="donorSegmentSelected:" destination="HcL-vX-AzW" eventType="valueChanged" id="07L-8u-wii"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="n0N-xs-Vgp"/>
+                    <connections>
+                        <outlet property="bloodTypeRhSegment" destination="zXz-go-jxU" id="tf0-Ce-5ad"/>
+                        <outlet property="bloodTypeSaveButton" destination="6XH-XO-nYd" id="Om9-Fk-nDQ"/>
+                        <outlet property="bloodTypeSegment" destination="TRk-BJ-ozG" id="JPu-VV-oYg"/>
+                        <outlet property="bloodTypeSelectionView" destination="sR4-K8-FqM" id="sMK-hj-Fof"/>
+                        <outlet property="bloodTypeValueLabel" destination="yTU-yg-h9Z" id="Em4-yb-h68"/>
+                        <outlet property="dobDatePicker" destination="Wr9-DQ-ex0" id="YMR-P7-gZi"/>
+                        <outlet property="dobSaveButton" destination="aoN-6W-vK9" id="Eru-wd-hDK"/>
+                        <outlet property="dobValueLabel" destination="bIW-4Q-2a3" id="0l5-YT-hPM"/>
+                        <outlet property="donorSegment" destination="wEC-jy-e3h" id="God-HW-pYR"/>
+                        <outlet property="donorValueLabel" destination="fbR-cx-QX3" id="T5k-T0-gO6"/>
+                        <outlet property="firstNameTextField" destination="7Sz-uk-z8e" id="evg-13-DcE"/>
+                        <outlet property="fullNameCell" destination="Sw4-S7-Kn6" id="jLo-y2-UZe"/>
+                        <outlet property="fullNameValueLabel" destination="uvz-HG-pol" id="1LS-ov-Wzi"/>
+                        <outlet property="genderSegment" destination="Igh-oX-4dB" id="iRi-6a-H51"/>
+                        <outlet property="genderValueLabel" destination="iCF-dd-5Z3" id="wHU-cQ-lFn"/>
+                        <outlet property="heightPicker" destination="2ei-SR-mZE" id="5kC-oa-3iL"/>
+                        <outlet property="heightSaveButton" destination="VkP-Iy-wby" id="KUV-yi-S81"/>
+                        <outlet property="heightUnitSelector" destination="PbE-h4-bum" id="10V-qK-r2G"/>
+                        <outlet property="heightValueLabel" destination="4a5-eo-1VH" id="MMH-2o-w5J"/>
+                        <outlet property="lastNameTextField" destination="7wg-HZ-K0y" id="74u-9w-bZ5"/>
+                        <outlet property="nameSaveButton" destination="NGl-Os-dYN" id="zO3-tq-cFt"/>
+                        <outlet property="weightPicker" destination="Sgk-xN-pUw" id="Jdr-Qo-jLn"/>
+                        <outlet property="weightSaveButton" destination="aZc-Mx-2kt" id="a8O-po-2jf"/>
+                        <outlet property="weightValueLabel" destination="V6V-OC-wiw" id="gjs-dS-gld"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLl-y1-r94" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="2433"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconCheckmark" width="40" height="40"/>
+    </resources>
+</document>

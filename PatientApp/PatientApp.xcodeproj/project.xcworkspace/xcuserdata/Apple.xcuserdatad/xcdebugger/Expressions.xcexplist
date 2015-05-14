@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PatientApp.ContactRelationshipVC.tableView (PatientApp.ContactRelationshipVC)(ObjectiveC.UITableView, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int:ContactRelationshipVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "relationship.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.ContactManager.insertContact (PatientApp.ContactManager)(PatientApp.Contact) -&gt; ():ContactManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.ContactManager.saveContact (PatientApp.ContactManager)(PatientApp.Contact) -&gt; ():ContactManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.ContactSettingsVC.tableView (PatientApp.ContactSettingsVC)(ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell:ContactSettingsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.ContactSettingsVC.tableView (PatientApp.ContactSettingsVC)(ObjectiveC.UITableView, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int:ContactSettingsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "contactList.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.ContactPriorityVC.tableView (PatientApp.ContactPriorityVC)(ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell:ContactPriorityVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.priorityItems[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.SettingsTableVC.tableView (PatientApp.SettingsTableVC)(ObjectiveC.UITableView, didSelectRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ():SettingsTableVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PatientApp.ContactDetailsVC.viewDidAppear (PatientApp.ContactDetailsVC)(Swift.Bool) -&gt; ():ContactDetailsVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "existingContact.contactID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

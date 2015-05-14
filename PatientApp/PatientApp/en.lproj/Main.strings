@@ -1,0 +1,24 @@
+
+/* Class = "IBUILabel"; text = "Community"; ObjectID = "Hcn-1w-diQ"; */
+"Hcn-1w-diQ.text" = "Community";
+
+/* Class = "IBUILabel"; text = "Dashboards"; ObjectID = "KQZ-1w-vlD"; */
+"KQZ-1w-vlD.text" = "Dashboards";
+
+/* Class = "IBUITabBarItem"; title = "Community"; ObjectID = "Nlx-kr-UUc"; */
+"Nlx-kr-UUc.title" = "Community";
+
+/* Class = "IBUITabBarItem"; title = "Dashboard"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Dashboard";
+
+/* Class = "IBUILabel"; text = "Settings"; ObjectID = "afC-Kr-3BJ"; */
+"afC-Kr-3BJ.text" = "Settings";
+
+/* Class = "IBUITabBarItem"; title = "Health Data"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Health Data";
+
+/* Class = "IBUITabBarItem"; title = "Settings"; ObjectID = "fpD-iE-5ZR"; */
+"fpD-iE-5ZR.title" = "Settings";
+
+/* Class = "IBUILabel"; text = "Health Data"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "Health Data";
