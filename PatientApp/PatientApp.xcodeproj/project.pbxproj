@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18572E591B04746800B09DE5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18572E5B1B04746800B09DE5 /* Settings.storyboard */; };
+		18572E601B0479CE00B09DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18572E621B0479CE00B09DE5 /* InfoPlist.strings */; };
+		18572E651B0479CE00B09DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18572E671B0479CE00B09DE5 /* InfoPlist.strings */; };
+		18572E6F1B0598F400B09DE5 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18572E711B0598F400B09DE5 /* Dashboard.storyboard */; };
+		18572E761B059C9200B09DE5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18572E781B059C9200B09DE5 /* Localizable.strings */; };
 		185B31041A99D8AA00273B99 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B31031A99D8AA00273B99 /* SettingsTableVC.swift */; };
 		185B31081A9AFF9000273B99 /* PatientSettingsNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B31071A9AFF9000273B99 /* PatientSettingsNC.swift */; };
 		185B310D1A9ECA4F00273B99 /* MyBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B310C1A9ECA4F00273B99 /* MyBaseView.swift */; };
@@ -15,8 +20,6 @@
 		185B312C1A9EE63C00273B99 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B312B1A9EE63C00273B99 /* DatabaseManager.swift */; };
 		185B31331A9EF1D400273B99 /* PatientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B31321A9EF1D400273B99 /* PatientManager.swift */; };
 		1865B4501A911BF9003FAA89 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865B44F1A911BF9003FAA89 /* MainVC.swift */; };
-		1865B4541A917E7E003FAA89 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1865B4531A917E7E003FAA89 /* Dashboard.storyboard */; };
-		1865E9B51B030D000043C170 /* DenemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865E9B41B030D000043C170 /* DenemeViewController.swift */; };
 		186B86FF1AA69EEA00C0E5DE /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */; };
 		186B87011AA6B69700C0E5DE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B87001AA6B69700C0E5DE /* Contact.swift */; };
 		1875A38E1AAFF0AB0070367B /* ContactPriorityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A38D1AAFF0AB0070367B /* ContactPriorityVC.swift */; };
@@ -67,7 +70,6 @@
 		18F13F491A918AA200807304 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F481A918AA200807304 /* DashboardVC.swift */; };
 		18F13F4B1A91905B00807304 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F4A1A91905B00807304 /* StoryboardManager.swift */; };
 		18F13F4F1A91C91000807304 /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F13F4E1A91C91000807304 /* Community.storyboard */; };
-		18F13F511A91C92500807304 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F13F501A91C92500807304 /* Settings.storyboard */; };
 		18F13F531A91C95600807304 /* HealthDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F521A91C95600807304 /* HealthDataVC.swift */; };
 		18F13F551A91C96F00807304 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F541A91C96F00807304 /* CommunityVC.swift */; };
 		18F13F571A91C98700807304 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F561A91C98700807304 /* SettingsVC.swift */; };
@@ -104,6 +106,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18572E571B0472DC00B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		18572E581B0472DD00B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		18572E5A1B04746800B09DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		18572E611B0479CE00B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18572E661B0479CE00B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18572E691B047C1C00B09DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Settings.strings; sourceTree = "<group>"; };
+		18572E6A1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		18572E6B1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		18572E6C1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Settings.strings; sourceTree = "<group>"; };
+		18572E6D1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18572E6E1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18572E701B0598F400B09DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
+		18572E731B0598F700B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Dashboard.strings; sourceTree = "<group>"; };
+		18572E771B059C9200B09DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18572E791B059C9400B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18572EB71B05A51500B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Settings.strings; sourceTree = "<group>"; };
+		18572EB81B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18572EB91B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		18572EBA1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		18572EBB1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Dashboard.strings; sourceTree = "<group>"; };
+		18572EBC1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Settings.strings; sourceTree = "<group>"; };
+		18572EBD1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18572EBE1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		185B31031A99D8AA00273B99 /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableVC.swift; path = Settings/SettingsTableVC.swift; sourceTree = "<group>"; };
 		185B31071A9AFF9000273B99 /* PatientSettingsNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientSettingsNC.swift; path = Settings/NavigationControllers/PatientSettingsNC.swift; sourceTree = "<group>"; };
 		185B310C1A9ECA4F00273B99 /* MyBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyBaseView.swift; path = Base/MyBaseView.swift; sourceTree = "<group>"; };
@@ -112,8 +137,6 @@
 		185B312B1A9EE63C00273B99 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = DAL/DatabaseManager.swift; sourceTree = "<group>"; };
 		185B31321A9EF1D400273B99 /* PatientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientManager.swift; path = DAL/PatientManager.swift; sourceTree = "<group>"; };
 		1865B44F1A911BF9003FAA89 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		1865B4531A917E7E003FAA89 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Dashboard.storyboard; path = Dashboard/Dashboard.storyboard; sourceTree = "<group>"; };
-		1865E9B41B030D000043C170 /* DenemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DenemeViewController.swift; path = Settings/DenemeViewController.swift; sourceTree = "<group>"; };
 		186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBar.swift; path = Presentation/Main/MainTabBar.swift; sourceTree = "<group>"; };
 		186B87001AA6B69700C0E5DE /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/Contact.swift; sourceTree = "<group>"; };
 		1875A38D1AAFF0AB0070367B /* ContactPriorityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactPriorityVC.swift; path = Settings/Contact/ContactPriorityVC.swift; sourceTree = "<group>"; };
@@ -147,8 +170,6 @@
 		18BF81401AAA82F3003A0B27 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		18BF81461AAA919D003A0B27 /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Relationship.swift; path = Model/Relationship.swift; sourceTree = "<group>"; };
 		18BF81491AAA94B9003A0B27 /* RelationshipManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RelationshipManager.swift; path = DAL/RelationshipManager.swift; sourceTree = "<group>"; };
-		18C677CF1AF6F4F9006932AD /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		18C677D01AF6F629006932AD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		18E0006D1A9FDDA9005A228C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		18E000C51A9FFE23005A228C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../Framework/fmdb/src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
 		18E000C61A9FFE23005A228C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../../Framework/fmdb/src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
@@ -174,7 +195,6 @@
 		18F13F481A918AA200807304 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardVC.swift; path = Dashboard/DashboardVC.swift; sourceTree = "<group>"; };
 		18F13F4A1A91905B00807304 /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
 		18F13F4E1A91C91000807304 /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Community.storyboard; path = Community/Community.storyboard; sourceTree = "<group>"; };
-		18F13F501A91C92500807304 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Settings/Settings.storyboard; sourceTree = "<group>"; };
 		18F13F521A91C95600807304 /* HealthDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataVC.swift; path = HealthData/HealthDataVC.swift; sourceTree = "<group>"; };
 		18F13F541A91C96F00807304 /* CommunityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunityVC.swift; path = Community/CommunityVC.swift; sourceTree = "<group>"; };
 		18F13F561A91C98700807304 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Settings/SettingsVC.swift; sourceTree = "<group>"; };
@@ -301,7 +321,7 @@
 		1865B44B1A911A65003FAA89 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				1865B4531A917E7E003FAA89 /* Dashboard.storyboard */,
+				18572E711B0598F400B09DE5 /* Dashboard.storyboard */,
 				18F13F481A918AA200807304 /* DashboardVC.swift */,
 				18EABBBD1AB36238000768D6 /* DashboardNC.swift */,
 			);
@@ -332,10 +352,9 @@
 				185B31091A9B04F100273B99 /* 0.NavigationControllers */,
 				18BAFABC1A9952E300B5556F /* 1.Patient */,
 				18ACECD81AA3C0DA005700BE /* 2.Contact */,
-				18F13F501A91C92500807304 /* Settings.storyboard */,
+				18572E5B1B04746800B09DE5 /* Settings.storyboard */,
 				18F13F561A91C98700807304 /* SettingsVC.swift */,
 				185B31031A99D8AA00273B99 /* SettingsTableVC.swift */,
-				1865E9B41B030D000043C170 /* DenemeViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -417,6 +436,7 @@
 		18F80AB21AA1485700BA2AF0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				18572E781B059C9200B09DE5 /* Localizable.strings */,
 				185B310B1A9ECA2800273B99 /* Base */,
 				1865B44B1A911A65003FAA89 /* Dashboard */,
 				1865B44C1A911A75003FAA89 /* HealthData */,
@@ -463,6 +483,7 @@
 		18FA98381A8E5CDE008F7CDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18572E621B0479CE00B09DE5 /* InfoPlist.strings */,
 				18FA98391A8E5CDE008F7CDD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -480,6 +501,7 @@
 		18FA98501A8E5CDE008F7CDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18572E671B0479CE00B09DE5 /* InfoPlist.strings */,
 				18FA98511A8E5CDE008F7CDD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -555,6 +577,9 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
+				ru,
+				ar,
 			);
 			mainGroup = 18FA982C1A8E5CDE008F7CDD;
 			productRefGroup = 18FA98361A8E5CDE008F7CDD /* Products */;
@@ -573,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F80AB31AA15DCD00BA2AF0 /* Mobilinic.sqlite in Resources */,
+				18572E601B0479CE00B09DE5 /* InfoPlist.strings in Resources */,
 				18F13F4F1A91C91000807304 /* Community.storyboard in Resources */,
 				18FA98421A8E5CDE008F7CDD /* Main.storyboard in Resources */,
 				18B721F01A95BC7100B3CF72 /* MyDatePickerView.xib in Resources */,
@@ -580,8 +606,9 @@
 				18BAFABE1A99530A00B5556F /* PatientSettings.storyboard in Resources */,
 				18B721F21A95C0F600B3CF72 /* HealthData.storyboard in Resources */,
 				18FA98441A8E5CDE008F7CDD /* Images.xcassets in Resources */,
-				1865B4541A917E7E003FAA89 /* Dashboard.storyboard in Resources */,
-				18F13F511A91C92500807304 /* Settings.storyboard in Resources */,
+				18572E761B059C9200B09DE5 /* Localizable.strings in Resources */,
+				18572E6F1B0598F400B09DE5 /* Dashboard.storyboard in Resources */,
+				18572E591B04746800B09DE5 /* Settings.storyboard in Resources */,
 				18ACECDA1AA3C11B005700BE /* ContactSettings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +617,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18572E651B0479CE00B09DE5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +648,6 @@
 				18F80AB71AA1973700BA2AF0 /* FMDatabaseVariadic.swift in Sources */,
 				18E43C0D1AA94E6400E05D22 /* ContactRelationshipVC.swift in Sources */,
 				18E43BFF1AA7F79A00E05D22 /* ContactDetailsVC.swift in Sources */,
-				1865E9B51B030D000043C170 /* DenemeViewController.swift in Sources */,
 				18B721EE1A95BC3E00B3CF72 /* MyDatePickerView.swift in Sources */,
 				18E43C091AA8EF4200E05D22 /* ContactListCell.swift in Sources */,
 				1875A3901AAFF3440070367B /* Priority.swift in Sources */,
@@ -665,12 +692,68 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		18572E5B1B04746800B09DE5 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18572E5A1B04746800B09DE5 /* Base */,
+				18572E691B047C1C00B09DE5 /* en */,
+				18572E6C1B047C7300B09DE5 /* ru */,
+				18572EB71B05A51500B09DE5 /* tr */,
+				18572EBC1B05A7B800B09DE5 /* ar */,
+			);
+			name = Settings.storyboard;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		18572E621B0479CE00B09DE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18572E611B0479CE00B09DE5 /* tr */,
+				18572E6D1B047C7300B09DE5 /* ru */,
+				18572EB81B05A7B800B09DE5 /* ar */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18572E671B0479CE00B09DE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18572E661B0479CE00B09DE5 /* tr */,
+				18572E6E1B047C7300B09DE5 /* ru */,
+				18572EBE1B05A7B800B09DE5 /* ar */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18572E711B0598F400B09DE5 /* Dashboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18572E701B0598F400B09DE5 /* Base */,
+				18572E731B0598F700B09DE5 /* tr */,
+				18572EBB1B05A7B800B09DE5 /* ar */,
+			);
+			name = Dashboard.storyboard;
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		18572E781B059C9200B09DE5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18572E771B059C9200B09DE5 /* Base */,
+				18572E791B059C9400B09DE5 /* tr */,
+				18572EBD1B05A7B800B09DE5 /* ar */,
+			);
+			name = Localizable.strings;
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		18FA98401A8E5CDE008F7CDD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18FA98411A8E5CDE008F7CDD /* Base */,
-				18C677CF1AF6F4F9006932AD /* tr */,
-				18C677D01AF6F629006932AD /* ar */,
+				18572E581B0472DD00B09DE5 /* tr */,
+				18572E6B1B047C7300B09DE5 /* ru */,
+				18572EBA1B05A7B800B09DE5 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -679,6 +762,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				18FA98461A8E5CDE008F7CDD /* Base */,
+				18572E571B0472DC00B09DE5 /* tr */,
+				18572E6A1B047C7300B09DE5 /* ru */,
+				18572EB91B05A7B800B09DE5 /* ar */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

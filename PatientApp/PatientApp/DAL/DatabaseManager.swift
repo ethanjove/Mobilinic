@@ -26,7 +26,7 @@ class DatabaseManager: NSObject {
         dbInstance.localDB = FMDatabase(path: Util.getPath("Mobilinic.sqlite"))
         var path = Util.getPath("Mobilinic.sqlite")
         
-        println("path : \(path)")
+        //println("path : \(path)")
         return dbInstance
     }
     

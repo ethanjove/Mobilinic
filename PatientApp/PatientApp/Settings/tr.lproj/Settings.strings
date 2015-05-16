@@ -1,0 +1,210 @@
+
+/* Class = "UILabel"; text = "Hatırlatmalar"; ObjectID = "0SO-vB-ixT"; */
+"0SO-vB-ixT.text" = "Hatırlatmalar";
+
+/* Class = "UITextField"; placeholder = "İl"; ObjectID = "1Fw-Ip-jQy"; */
+"1Fw-Ip-jQy.placeholder" = "İl";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "1wq-zJ-7BO"; */
+"1wq-zJ-7BO.text" = "---";
+
+/* Class = "UITableViewSection"; headerTitle = "  "; ObjectID = "2XC-Az-sjD"; */
+"2XC-Az-sjD.headerTitle" = "  ";
+
+/* Class = "UILabel"; text = "Doğum Tarihi"; ObjectID = "43L-8b-sCS"; */
+"43L-8b-sCS.text" = "Doğum Tarihi";
+
+/* Class = "UILabel"; text = "Birimler"; ObjectID = "5Eo-HK-am2"; */
+"5Eo-HK-am2.text" = "Birimler";
+
+/* Class = "UINavigationItem"; title = "Yakınlık"; ObjectID = "6P3-By-jcu"; */
+"6P3-By-jcu.title" = "Yakınlık";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "7HH-Re-gex"; */
+"7HH-Re-gex.text" = "---";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "8M6-yh-W6Z"; */
+"8M6-yh-W6Z.text" = "Title";
+
+/* Class = "UILabel"; text = "Hasta"; ObjectID = "9Gx-f4-g30"; */
+"9Gx-f4-g30.text" = "Hasta";
+
+/* Class = "UILabel"; text = "İş"; ObjectID = "9aE-Nt-ma6"; */
+"9aE-Nt-ma6.text" = "İş";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "BNc-f4-NmO"; */
+"BNc-f4-NmO.text" = "---";
+
+/* Class = "UILabel"; text = "Boy"; ObjectID = "BO7-9Z-UFu"; */
+"BO7-9Z-UFu.text" = "Boy";
+
+/* Class = "UITextField"; placeholder = "Adı"; ObjectID = "C2f-bc-H1e"; */
+"C2f-bc-H1e.placeholder" = "Adı";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[0] = "A"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[0]" = "A";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[1] = "B"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[1]" = "B";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[2] = "AB"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[2]" = "AB";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[3] = "0"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[3]" = "0";
+
+/* Class = "UILabel"; text = "Hastane"; ObjectID = "E4Q-U9-NIN"; */
+"E4Q-U9-NIN.text" = "Hastane";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "EfO-wg-3JG"; */
+"EfO-wg-3JG.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Ev Telefonu"; ObjectID = "FF3-zR-ldc"; */
+"FF3-zR-ldc.placeholder" = "Ev Telefonu";
+
+/* Class = "UILabel"; text = "Posta Kodu"; ObjectID = "FLn-IH-SxE"; */
+"FLn-IH-SxE.text" = "Posta Kodu";
+
+/* Class = "UINavigationItem"; title = "İrtibat Listesi"; ObjectID = "Ffg-fm-Kkk"; */
+"Ffg-fm-Kkk.title" = "İrtibat Listesi";
+
+/* Class = "UISegmentedControl"; GRf-3e-dZg.segmentTitles[0] = "Evet"; ObjectID = "GRf-3e-dZg"; */
+"GRf-3e-dZg.segmentTitles[0]" = "Evet";
+
+/* Class = "UISegmentedControl"; GRf-3e-dZg.segmentTitles[1] = "Hayır"; ObjectID = "GRf-3e-dZg"; */
+"GRf-3e-dZg.segmentTitles[1]" = "Hayır";
+
+/* Class = "UISegmentedControl"; GRf-3e-dZg.segmentTitles[2] = "---"; ObjectID = "GRf-3e-dZg"; */
+"GRf-3e-dZg.segmentTitles[2]" = "---";
+
+/* Class = "UILabel"; text = "Adınız Soyadını"; ObjectID = "GxL-Yh-0nT"; */
+"GxL-Yh-0nT.text" = "Adınız Soyadını";
+
+/* Class = "UILabel"; text = "Organ Bağışı"; ObjectID = "IX7-SN-x0i"; */
+"IX7-SN-x0i.text" = "Organ Bağışı";
+
+/* Class = "UITableViewSection"; headerTitle = "  "; ObjectID = "In9-6V-jgs"; */
+"In9-6V-jgs.headerTitle" = "  ";
+
+/* Class = "UITableViewSection"; headerTitle = "  "; ObjectID = "KvI-Kq-lNK"; */
+"KvI-Kq-lNK.headerTitle" = "  ";
+
+/* Class = "UITextField"; placeholder = "Posta Kodu"; ObjectID = "MU0-uN-lNo"; */
+"MU0-uN-lNo.placeholder" = "Posta Kodu";
+
+/* Class = "UINavigationItem"; title = "Ayarlar"; ObjectID = "PFQ-Sy-OR3"; */
+"PFQ-Sy-OR3.title" = "Ayarlar";
+
+/* Class = "UILabel"; text = "Cinsiyet"; ObjectID = "Q6N-nQ-Q52"; */
+"Q6N-nQ-Q52.text" = "Cinsiyet";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "SVV-qO-FXw"; */
+"SVV-qO-FXw.text" = "---";
+
+/* Class = "UITextField"; placeholder = "Soyadı"; ObjectID = "SfQ-Is-YuT"; */
+"SfQ-Is-YuT.placeholder" = "Soyadı";
+
+/* Class = "UILabel"; text = "Haberleşme"; ObjectID = "Sg6-Z6-yok"; */
+"Sg6-Z6-yok.text" = "Haberleşme";
+
+/* Class = "UITextField"; placeholder = "e-Posta Adresi"; ObjectID = "UKZ-C2-HkH"; */
+"UKZ-C2-HkH.placeholder" = "e-Posta Adresi";
+
+/* Class = "UITextField"; placeholder = "Soyadı"; ObjectID = "UbH-RB-lKR"; */
+"UbH-RB-lKR.placeholder" = "Soyadı";
+
+/* Class = "UILabel"; text = "İlçe"; ObjectID = "UnC-q5-b6m"; */
+"UnC-q5-b6m.text" = "İlçe";
+
+/* Class = "UITextField"; placeholder = "Yakınlık"; ObjectID = "WuA-vy-f4E"; */
+"WuA-vy-f4E.placeholder" = "Yakınlık";
+
+/* Class = "UILabel"; text = "Mobilinic"; ObjectID = "XT5-ph-OyH"; */
+"XT5-ph-OyH.text" = "Mobilinic";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "XnD-QP-dew"; */
+"XnD-QP-dew.text" = "---";
+
+/* Class = "UILabel"; text = "Cep"; ObjectID = "Y25-Zv-hOX"; */
+"Y25-Zv-hOX.text" = "Cep";
+
+/* Class = "UILabel"; text = "İl"; ObjectID = "YSK-in-dZ9"; */
+"YSK-in-dZ9.text" = "İl";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Yff-Cw-Nod"; */
+"Yff-Cw-Nod.text" = "---";
+
+/* Class = "UITextField"; placeholder = "Adı"; ObjectID = "Z0S-79-Lq9"; */
+"Z0S-79-Lq9.placeholder" = "Adı";
+
+/* Class = "UINavigationItem"; title = "Öncelik"; ObjectID = "ZnS-aZ-4qN"; */
+"ZnS-aZ-4qN.title" = "Öncelik";
+
+/* Class = "UITextField"; placeholder = "İlçe"; ObjectID = "ab8-ra-Gv8"; */
+"ab8-ra-Gv8.placeholder" = "İlçe";
+
+/* Class = "UILabel"; text = "e-Posta"; ObjectID = "d5K-ca-26q"; */
+"d5K-ca-26q.text" = "e-Posta";
+
+/* Class = "UISegmentedControl"; d5b-ho-r7Z.segmentTitles[0] = "Erkek"; ObjectID = "d5b-ho-r7Z"; */
+"d5b-ho-r7Z.segmentTitles[0]" = "Erkek";
+
+/* Class = "UISegmentedControl"; d5b-ho-r7Z.segmentTitles[1] = "Kadın"; ObjectID = "d5b-ho-r7Z"; */
+"d5b-ho-r7Z.segmentTitles[1]" = "Kadın";
+
+/* Class = "UILabel"; text = "Adı Soyadı"; ObjectID = "dLX-vU-CeI"; */
+"dLX-vU-CeI.text" = "Adı Soyadı";
+
+/* Class = "UILabel"; text = "Kan Grubu"; ObjectID = "f32-Oh-bXF"; */
+"f32-Oh-bXF.text" = "Kan Grubu";
+
+/* Class = "UITextField"; placeholder = "İş Telefonu"; ObjectID = "gi7-gP-od5"; */
+"gi7-gP-od5.placeholder" = "İş Telefonu";
+
+/* Class = "UINavigationItem"; title = "Detaylar"; ObjectID = "hWe-CW-j1d"; */
+"hWe-CW-j1d.title" = "Detaylar";
+
+/* Class = "UITextField"; placeholder = "Öncelik"; ObjectID = "hff-rW-XaA"; */
+"hff-rW-XaA.placeholder" = "Öncelik";
+
+/* Class = "UILabel"; text = "Ağırlık"; ObjectID = "iSl-LG-XaN"; */
+"iSl-LG-XaN.text" = "Ağırlık";
+
+/* Class = "UILabel"; text = "İrtibat Listesi"; ObjectID = "lNu-LA-Ua0"; */
+"lNu-LA-Ua0.text" = "İrtibat Listesi";
+
+/* Class = "UITextField"; placeholder = "Ev Adresi"; ObjectID = "ldY-s6-Jvv"; */
+"ldY-s6-Jvv.placeholder" = "Ev Adresi";
+
+/* Class = "UILabel"; text = "Adres"; ObjectID = "m70-Hm-6hF"; */
+"m70-Hm-6hF.text" = "Adres";
+
+/* Class = "UISegmentedControl"; nt8-fN-lgy.segmentTitles[0] = "cm"; ObjectID = "nt8-fN-lgy"; */
+"nt8-fN-lgy.segmentTitles[0]" = "cm";
+
+/* Class = "UISegmentedControl"; nt8-fN-lgy.segmentTitles[1] = "inch"; ObjectID = "nt8-fN-lgy"; */
+"nt8-fN-lgy.segmentTitles[1]" = "inch";
+
+/* Class = "UISegmentedControl"; nyr-JQ-reB.segmentTitles[0] = "+"; ObjectID = "nyr-JQ-reB"; */
+"nyr-JQ-reB.segmentTitles[0]" = "+";
+
+/* Class = "UISegmentedControl"; nyr-JQ-reB.segmentTitles[1] = "-"; ObjectID = "nyr-JQ-reB"; */
+"nyr-JQ-reB.segmentTitles[1]" = "-";
+
+/* Class = "UITextField"; placeholder = "Daire"; ObjectID = "qO6-Jq-O1I"; */
+"qO6-Jq-O1I.placeholder" = "Daire";
+
+/* Class = "UILabel"; text = "Diğer Cihazlar"; ObjectID = "v0r-9w-DIN"; */
+"v0r-9w-DIN.text" = "Diğer Cihazlar";
+
+/* Class = "UILabel"; text = "Apple Health"; ObjectID = "xIx-vY-92t"; */
+"xIx-vY-92t.text" = "Apple Health";
+
+/* Class = "UILabel"; text = "Ev"; ObjectID = "zYR-k9-WF8"; */
+"zYR-k9-WF8.text" = "Ev";
+
+/* Class = "UITextField"; placeholder = "Cep Telefonu"; ObjectID = "zdo-GG-jyF"; */
+"zdo-GG-jyF.placeholder" = "Cep Telefonu";
+
+/* Class = "UILabel"; text = "Adresler"; ObjectID = "zgq-Rj-lcV"; */
+"zgq-Rj-lcV.text" = "Adresler";

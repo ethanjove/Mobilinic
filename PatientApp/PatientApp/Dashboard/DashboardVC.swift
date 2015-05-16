@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class DashboardVC: UIViewController {
 
@@ -18,8 +19,9 @@ class DashboardVC: UIViewController {
         super.viewDidLoad()
         
         setupCurrentHeartbitChart()
-        //setupHeartbitHistoryChart()
         drawHeartbit();
+        
+        setupBodyTemperatureHistoryChart()
         
         // Do any additional setup after loading the view.
     }
@@ -50,7 +52,7 @@ class DashboardVC: UIViewController {
         }
         */
         
-        currentHeartbitChart.hidden = true;
+        self.currentHeartbitChart.hidden = true;
         
         var series:TKChartSeries
         series = TKChartSplineSeries(items:ecgData as [AnyObject])
@@ -66,79 +68,24 @@ class DashboardVC: UIViewController {
         xAxis.style.lineHidden = true
         xAxis.style.majorTickStyle.ticksHidden = true
         xAxis.style.labelStyle.textHidden = true
-        currentHeartbitChart.xAxis = xAxis
+        self.currentHeartbitChart.xAxis = xAxis
         
         let yAxis = TKChartNumericAxis(minimum: -30, andMaximum: 120)
         yAxis.position = TKChartAxisPosition.Left
         yAxis.style.lineHidden = true
         yAxis.style.majorTickStyle.ticksHidden = true
         yAxis.style.labelStyle.textHidden = true
-        currentHeartbitChart.yAxis = yAxis
+        self.currentHeartbitChart.yAxis = yAxis
         
-        currentHeartbitChart.allowAnimations = true
-        currentHeartbitChart.title().hidden = false
+        self.currentHeartbitChart.allowAnimations = true
+        self.currentHeartbitChart.title().hidden = false
         
         
-        currentHeartbitChart.addSeries(series)
+        self.currentHeartbitChart.addSeries(series)
 
     }
     
-    /*
-    func setupHeartbitHistoryChart() {
-        let heartbits = NSMutableArray()
-        
-        heartbits.addObject(TKChartDataPoint(x: 1, y:60))
-        heartbits.addObject(TKChartDataPoint(x: 2, y:60))
-        heartbits.addObject(TKChartDataPoint(x: 3, y:63))
-        heartbits.addObject(TKChartDataPoint(x: 4, y:61))
-        heartbits.addObject(TKChartDataPoint(x: 5, y:60))
-        heartbits.addObject(TKChartDataPoint(x: 6, y:60))
-        heartbits.addObject(TKChartDataPoint(x: 7, y:58))
-        heartbits.addObject(TKChartDataPoint(x: 8, y:57))
-        heartbits.addObject(TKChartDataPoint(x: 9, y:60))
-        heartbits.addObject(TKChartDataPoint(x: 10, y:65))
-        heartbits.addObject(TKChartDataPoint(x: 11, y:68))
-        heartbits.addObject(TKChartDataPoint(x: 13, y:70))
-        heartbits.addObject(TKChartDataPoint(x: 14, y:80))
-        heartbits.addObject(TKChartDataPoint(x: 15, y:70))
-        heartbits.addObject(TKChartDataPoint(x: 16, y:60))
-        
-        /*
-        for i in 1...1000 {
-        ecgData.addObject(TKChartDataPoint(x: (i+1), y: Int(arc4random()%100)))
-        
-        }
-        */
-        
-        
-        var series:TKChartSeries
-        series = TKChartSplineSeries(items:heartbits as [AnyObject])
-        
-        let xAxis = TKChartNumericAxis(minimum: 1, andMaximum: 16)
-        xAxis.position = TKChartAxisPosition.Bottom
-        //xAxis.style.lineHidden = true
-        //xAxis.style.majorTickStyle.ticksHidden = true
-        xAxis.style.labelStyle.textHidden = true
-        xAxis.majorTickInterval = 1
-        xAxis.minorTickInterval = 1
-        heartbitHistoryChart.xAxis = xAxis
-        
-        let yAxis = TKChartNumericAxis(minimum: 30, andMaximum: 90)
-        yAxis.position = TKChartAxisPosition.Left
-        //yAxis.style.lineHidden = true
-        //yAxis.style.majorTickStyle.ticksHidden = true
-        //yAxis.style.labelStyle.textHidden = true
-        heartbitHistoryChart.yAxis = yAxis
-        
-        heartbitHistoryChart.allowAnimations = false
-        heartbitHistoryChart.title().hidden = false
-        
-        heartbitHistoryChart.addSeries(series)
-        heartbitHistoryChart.hidden = false
-        
-    }
-    */
-
+   
     func drawHeartbit() {
         if (self.animateHeartbit == true) {
         let interval  = (Double(60) / Double(self.heartbit))
@@ -158,9 +105,10 @@ class DashboardVC: UIViewController {
         super.init(coder: aDecoder)
     }
     
+    @IBOutlet weak var heartbitHistoryChart: TKChart!
+
+    
     @IBOutlet weak var currentHeartbitChart: TKChart!
-    
-    
     @IBOutlet weak var currentBpmLabel: UILabel!
     
     
@@ -189,9 +137,85 @@ class DashboardVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var bodyTemperatureHistoryChart: TKChart!
     
-    @IBOutlet weak var heartbitHistoryChart: TKChart!
-    
+    func setupBodyTemperatureHistoryChart() {
+        
+        var normalValueDataPoints = [TKChartDataPoint]()
+        var highValueDataPoints = [TKChartDataPoint]()
+        
+        let normalValues = [36.5, 35.5, 36.2, 37.1, 0, 36, 36, 36, 37, 36, 0, 36, 36, 37, 36]
+        for var i = 0; i < normalValues.count; ++i {
+            normalValueDataPoints.append(TKChartDataPoint(x: i, y: normalValues[i]))
+        }
+        
+        let highValues = [0, 0, 0, 0, 38.0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0]
+        for var i = 0; i < highValues.count; ++i {
+            highValueDataPoints.append(TKChartDataPoint(x: i, y: highValues[i]))
+        }
+        
+        let stackInfo = TKChartStackInfo(ID: 1, withStackMode: TKChartStackMode.Stack)
+        
+        let seriesNormal = TKChartColumnSeries(items: normalValueDataPoints)
+        seriesNormal.stackInfo = stackInfo
+        seriesNormal.minColumnWidth = 7
+        seriesNormal.maxColumnWidth = 7
+        
+        seriesNormal.style.palette = TKChartPalette()
+        let paletteItemNormal = TKChartPaletteItem()
+        paletteItemNormal.fill = TKSolidFill(color: UIColor(red: 76.0 / 255.0, green: 175.0 / 255.0, blue: 80.0 / 255.0, alpha: 1))
+        paletteItemNormal.stroke = TKStroke(color: UIColor(red: 102.0 / 255.0, green: 187.0 / 255.0, blue: 106.0 / 255.0, alpha: 1))
+        seriesNormal.style.palette.addPaletteItem(paletteItemNormal)
+        
+        self.bodyTemperatureHistoryChart.addSeries(seriesNormal)
+        
+        
+        let seriesHigh = TKChartColumnSeries(items: highValueDataPoints)
+        seriesHigh.stackInfo = stackInfo
+        seriesHigh.minColumnWidth = 7
+        seriesHigh.maxColumnWidth = 7
+        
+        seriesHigh.style.palette = TKChartPalette()
+        let paletteItemHigh = TKChartPaletteItem()
+        paletteItemHigh.fill = TKSolidFill(color: UIColor.orangeColor())
+        paletteItemHigh.stroke = TKStroke(color: UIColor.orangeColor())
+        seriesHigh.style.palette.addPaletteItem(paletteItemHigh)
+        
+        self.bodyTemperatureHistoryChart.addSeries(seriesHigh)
+        
+        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 15)
+        xAxis.position = TKChartAxisPosition.Bottom
+        xAxis.style.lineHidden = true
+        xAxis.style.majorTickStyle.ticksHidden = true
+        xAxis.style.labelStyle.textHidden = true
+        self.bodyTemperatureHistoryChart.xAxis = xAxis
+
+        var maxTemp : Double = 0
+        maxTemp = maxElement(highValues)
+        if maxTemp == 0 {let maxTemp = maxElement(normalValues)}
+        
+        var minTemp : Double = 1000;
+        
+        for var i = 0; i < normalValues.count; ++i {
+            if (normalValues[i]>0) && (normalValues[i]<minTemp) {minTemp = normalValues[i]}
+        }
+        
+        if minTemp==1000 {
+            for var i = 0; i < normalValues.count; ++i {
+                if (highValues[i]>0) && (highValues[i]<minTemp) {minTemp = highValues[i]}
+            }
+        }
+        
+        minTemp = minTemp - 2;
+        
+        let yAxis = TKChartNumericAxis(minimum: minTemp, andMaximum: maxTemp)
+        yAxis.position = TKChartAxisPosition.Left
+        yAxis.style.lineHidden = true
+        yAxis.style.majorTickStyle.ticksHidden = true
+        yAxis.style.labelStyle.textHidden = true
+        self.bodyTemperatureHistoryChart.yAxis = yAxis
+        
+    }
     
     
     

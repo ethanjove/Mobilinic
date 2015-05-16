@@ -10,7 +10,7 @@ import UIKit
 
 class SettingsTableVC: UITableViewController, UISplitViewControllerDelegate {
     
-    private var collapseDetailViewController = true
+    private var collapseDetailViewController = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,8 @@ class SettingsTableVC: UITableViewController, UISplitViewControllerDelegate {
         self.tableView.rowHeight = 60
         
         splitViewController?.delegate = self;
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,14 +33,32 @@ class SettingsTableVC: UITableViewController, UISplitViewControllerDelegate {
     }
     
     
+    
     // MARK: - UISplitViewControllerDelegate
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        
+        for subview in cell.contentView.subviews {
+            if subview is UILabel {
+                let text = subview as! UILabel
+                text.textAlignment = NSTextAlignment.Natural
+                break
+            }
+        }
+        
+        return cell
+    }
     
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        collapseDetailViewController = false
+        //self.collapseDetailViewController = false
         
         //var cell = tableView.cellForRowAtIndexPath(indexPath)
+        
+        
         
         //cell?.contentView.backgroundColor = UIColor(red: 0x21/255, green: 0x96/255, blue: 0xF3/255, alpha: 1);
         //cell?.contentView.
@@ -62,8 +82,7 @@ class SettingsTableVC: UITableViewController, UISplitViewControllerDelegate {
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController!, ontoPrimaryViewController primaryViewController: UIViewController!) -> Bool {
         return collapseDetailViewController
     }
-    
-
+   
     // MARK: - Table view data source
 
     /*

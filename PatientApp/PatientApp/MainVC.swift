@@ -45,25 +45,25 @@ class MainVC: UITabBarController {
         self.viewControllers?.append(dashboardNavigationController)
         let dashboardTabbarItem : UITabBarItem = self.tabBar.items![0] as! UITabBarItem;
         dashboardTabbarItem.image = UIImage(named: "tabbarDashboard");
-        dashboardTabbarItem.title = "Dashboard"
+        dashboardTabbarItem.title = NSLocalizedString("dashboard", value: "Dashboard", comment : "Dashboard")
         
         let healthdataViewController = StoryboardManager.healthDataVC();
         self.viewControllers?.append(healthdataViewController);
         let healthdataTabbarItem : UITabBarItem = self.tabBar.items![1] as! UITabBarItem;
         healthdataTabbarItem.image = UIImage(named: "tabbarHealthData");
-        healthdataTabbarItem.title = "Health Data"
+        healthdataTabbarItem.title = NSLocalizedString("health_data", value: "Health Data", comment : "Health Data")
         
         let communityViewController = StoryboardManager.communityVC();
         self.viewControllers?.append(communityViewController);
         let communityTabbarItem : UITabBarItem = self.tabBar.items![2] as! UITabBarItem;
         communityTabbarItem.image = UIImage(named: "tabbarCommunity");
-        communityTabbarItem.title = "Community"
+        communityTabbarItem.title = NSLocalizedString("community", value: "Community", comment : "Community")
         
         let settingsViewController = StoryboardManager.settingsVC();
         self.viewControllers?.append(settingsViewController);
         let settingsTabbarItem : UITabBarItem = self.tabBar.items![3] as! UITabBarItem;
         settingsTabbarItem.image = UIImage(named: "tabbarSettings");
-        settingsTabbarItem.title = "Settings"
+        settingsTabbarItem.title = NSLocalizedString("settings", value: "Settings", comment : "Settings")
         
     }
 

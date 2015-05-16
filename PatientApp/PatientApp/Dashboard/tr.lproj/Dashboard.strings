@@ -1,0 +1,63 @@
+/* Class = "UINavigationItem"; title = "Dashboard"; ObjectID = "2Hp-7R-Bn5"; */
+"2Hp-7R-Bn5.title" = "Durum";
+
+/* Class = "UILabel"; text = "ecg"; ObjectID = "3oR-Yx-dYE"; */
+"3oR-Yx-dYE.text" = "ekg";
+
+/* Class = "UIButton"; normalTitle = "Fast"; ObjectID = "5Bt-DY-2IX"; */
+"5Bt-DY-2IX.normalTitle" = "Fast";
+
+/* Class = "UILabel"; text = "min"; ObjectID = "5dE-tu-usY"; */
+"5dE-tu-usY.text" = "min";
+
+/* Class = "UILabel"; text = "89"; ObjectID = "9l5-c3-5qF"; */
+"9l5-c3-5qF.text" = "89";
+
+/* Class = "UILabel"; text = "54"; ObjectID = "39E-Y9-d1d"; */
+"39E-Y9-d1d.text" = "54";
+
+/* Class = "UILabel"; text = "99.7"; ObjectID = "Hs6-Gn-dt9"; */
+"Hs6-Gn-dt9.text" = "99.7";
+
+/* Class = "UILabel"; text = "96.4"; ObjectID = "J7x-Q6-zKo"; */
+"J7x-Q6-zKo.text" = "96.4";
+
+/* Class = "UILabel"; text = "61"; ObjectID = "JHJ-E9-qtV"; */
+"JHJ-E9-qtV.text" = "61";
+
+/* Class = "UILabel"; text = "bpm"; ObjectID = "JgW-Iv-vEp"; */
+"JgW-Iv-vEp.text" = "atım/dk";
+
+/* Class = "UILabel"; text = "I"; ObjectID = "KRT-IM-sbZ"; */
+"KRT-IM-sbZ.text" = "I";
+
+/* Class = "UIButton"; normalTitle = "Slow"; ObjectID = "N0c-pE-h8h"; */
+"N0c-pE-h8h.normalTitle" = "Slow";
+
+/* Class = "UILabel"; text = "97.1"; ObjectID = "OpK-BV-mNT"; */
+"OpK-BV-mNT.text" = "97.1";
+
+/* Class = "UILabel"; text = "ºF"; ObjectID = "Rlp-UH-1oe"; */
+"Rlp-UH-1oe.text" = "ºC";
+
+/* Class = "UIButton"; normalTitle = "Normal"; ObjectID = "oWa-sy-643"; */
+"oWa-sy-643.normalTitle" = "Normal";
+
+/* Class = "UILabel"; text = "max"; ObjectID = "qMS-m8-ajn"; */
+"qMS-m8-ajn.text" = "mak";
+
+/* Class = "UILabel"; text = "Dashboard"; ObjectID = "rgV-7y-4p5"; */
+"rgV-7y-4p5.text" = "Durum";
+
+/* Class = "UINavigationItem"; title = "ECG"; ObjectID = "uAL-nS-kOc"; */
+"uAL-nS-kOc.title" = "EKG";
+
+/* Class = "UILabel"; text = "62"; ObjectID = "wTt-6X-0uA"; */
+"wTt-6X-0uA.text" = "62";
+
+/* Class = "UILabel"; text = "avg"; ObjectID = "xrx-Qg-3LS"; */
+"xrx-Qg-3LS.text" = "ort";
+
+/* Class = "UILabel"; text = "94.2"; ObjectID = "ziP-Cq-nGx"; */
+"ziP-Cq-nGx.text" = "94.2";
+

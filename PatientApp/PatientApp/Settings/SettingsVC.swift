@@ -14,13 +14,15 @@ class SettingsVC: UISplitViewController {
         super.viewDidLoad()
         
         //setupSubStoryboards();
-        self.preferredDisplayMode = .AllVisible;
+        //self.preferredDisplayMode = .AllVisible;
+        
+              
+        
 
         // Do any additional setup after loading the view.
     }
     //let dashboardViewController = StoryboardManager.dashboardVC();
     //self.viewControllers?.append(dashboardViewController)
-    
     
     func setupSubStoryboards() {
         //self.viewControllers.removeAll(keepCapacity: false);
@@ -34,11 +36,7 @@ class SettingsVC: UISplitViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onPatientSettingsPressed (sender:UITableViewCell)
-    {
         
-    }
-    
     
 
     /*

@@ -21,7 +21,37 @@ class CommunityVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func EnglishButtonTouchedUp(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setObject(["en"], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        
+    }
+    
+    @IBAction func TurkishButtonTouchedUp(sender: AnyObject) {
+        
+        NSUserDefaults.standardUserDefaults().setObject(["tr"], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+       
+    }
 
+    @IBAction func RussionButtonTouchedUp(sender: AnyObject) {
+        
+        NSUserDefaults.standardUserDefaults().setObject(["ru"], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+       
+    }
+    
+    @IBAction func ArabicButtonTouchedUp(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setObject(["ar"], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 

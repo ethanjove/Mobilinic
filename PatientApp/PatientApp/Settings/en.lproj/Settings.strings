@@ -1,0 +1,210 @@
+
+/* Class = "UILabel"; text = "Daily Remainders"; ObjectID = "0SO-vB-ixT"; */
+"0SO-vB-ixT.text" = "Daily Remainders";
+
+/* Class = "UITextField"; placeholder = "State"; ObjectID = "1Fw-Ip-jQy"; */
+"1Fw-Ip-jQy.placeholder" = "State";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "1wq-zJ-7BO"; */
+"1wq-zJ-7BO.text" = "---";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "2XC-Az-sjD"; */
+"2XC-Az-sjD.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "Date of Birth"; ObjectID = "43L-8b-sCS"; */
+"43L-8b-sCS.text" = "Date of Birth";
+
+/* Class = "UILabel"; text = "Units of Measure"; ObjectID = "5Eo-HK-am2"; */
+"5Eo-HK-am2.text" = "Units of Measure";
+
+/* Class = "UINavigationItem"; title = "Relationship"; ObjectID = "6P3-By-jcu"; */
+"6P3-By-jcu.title" = "Relationship";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "7HH-Re-gex"; */
+"7HH-Re-gex.text" = "---";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "8M6-yh-W6Z"; */
+"8M6-yh-W6Z.text" = "Title";
+
+/* Class = "UILabel"; text = "Patient"; ObjectID = "9Gx-f4-g30"; */
+"9Gx-f4-g30.text" = "Patient";
+
+/* Class = "UILabel"; text = "Work"; ObjectID = "9aE-Nt-ma6"; */
+"9aE-Nt-ma6.text" = "Work";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "BNc-f4-NmO"; */
+"BNc-f4-NmO.text" = "---";
+
+/* Class = "UILabel"; text = "Height"; ObjectID = "BO7-9Z-UFu"; */
+"BO7-9Z-UFu.text" = "Height";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "C2f-bc-H1e"; */
+"C2f-bc-H1e.placeholder" = "First Name";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[0] = "A"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[0]" = "A";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[1] = "B"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[1]" = "B";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[2] = "AB"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[2]" = "AB";
+
+/* Class = "UISegmentedControl"; Cnm-JB-Gc9.segmentTitles[3] = "0"; ObjectID = "Cnm-JB-Gc9"; */
+"Cnm-JB-Gc9.segmentTitles[3]" = "0";
+
+/* Class = "UILabel"; text = "Hospitals"; ObjectID = "E4Q-U9-NIN"; */
+"E4Q-U9-NIN.text" = "Hospitals";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "EfO-wg-3JG"; */
+"EfO-wg-3JG.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Home phone number"; ObjectID = "FF3-zR-ldc"; */
+"FF3-zR-ldc.placeholder" = "Home phone number";
+
+/* Class = "UILabel"; text = "Zip Code"; ObjectID = "FLn-IH-SxE"; */
+"FLn-IH-SxE.text" = "Zip Code";
+
+/* Class = "UINavigationItem"; title = "Contact List"; ObjectID = "Ffg-fm-Kkk"; */
+"Ffg-fm-Kkk.title" = "Contact List";
+
+/* Class = "UISegmentedControl"; GRf-3e-dZg.segmentTitles[0] = "Yes"; ObjectID = "GRf-3e-dZg"; */
+"GRf-3e-dZg.segmentTitles[0]" = "Yes";
+
+/* Class = "UISegmentedControl"; GRf-3e-dZg.segmentTitles[1] = "No"; ObjectID = "GRf-3e-dZg"; */
+"GRf-3e-dZg.segmentTitles[1]" = "No";
+
+/* Class = "UISegmentedControl"; GRf-3e-dZg.segmentTitles[2] = "---"; ObjectID = "GRf-3e-dZg"; */
+"GRf-3e-dZg.segmentTitles[2]" = "---";
+
+/* Class = "UILabel"; text = "Your Full Name"; ObjectID = "GxL-Yh-0nT"; */
+"GxL-Yh-0nT.text" = "Your Full Name";
+
+/* Class = "UILabel"; text = "Organ Donor"; ObjectID = "IX7-SN-x0i"; */
+"IX7-SN-x0i.text" = "Organ Donor";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "In9-6V-jgs"; */
+"In9-6V-jgs.headerTitle" = " ";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "KvI-Kq-lNK"; */
+"KvI-Kq-lNK.headerTitle" = " ";
+
+/* Class = "UITextField"; placeholder = "Zip Code"; ObjectID = "MU0-uN-lNo"; */
+"MU0-uN-lNo.placeholder" = "Zip Code";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "PFQ-Sy-OR3"; */
+"PFQ-Sy-OR3.title" = "Settings";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "Q6N-nQ-Q52"; */
+"Q6N-nQ-Q52.text" = "Gender";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "SVV-qO-FXw"; */
+"SVV-qO-FXw.text" = "---";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "SfQ-Is-YuT"; */
+"SfQ-Is-YuT.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Communication"; ObjectID = "Sg6-Z6-yok"; */
+"Sg6-Z6-yok.text" = "Communication";
+
+/* Class = "UITextField"; placeholder = "email address"; ObjectID = "UKZ-C2-HkH"; */
+"UKZ-C2-HkH.placeholder" = "email address";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "UbH-RB-lKR"; */
+"UbH-RB-lKR.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "UnC-q5-b6m"; */
+"UnC-q5-b6m.text" = "City";
+
+/* Class = "UITextField"; placeholder = "Relationship"; ObjectID = "WuA-vy-f4E"; */
+"WuA-vy-f4E.placeholder" = "Relationship";
+
+/* Class = "UILabel"; text = "Mobilinic"; ObjectID = "XT5-ph-OyH"; */
+"XT5-ph-OyH.text" = "Mobilinic";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "XnD-QP-dew"; */
+"XnD-QP-dew.text" = "---";
+
+/* Class = "UILabel"; text = "Cell"; ObjectID = "Y25-Zv-hOX"; */
+"Y25-Zv-hOX.text" = "Cell";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "YSK-in-dZ9"; */
+"YSK-in-dZ9.text" = "State";
+
+/* Class = "UILabel"; text = "---"; ObjectID = "Yff-Cw-Nod"; */
+"Yff-Cw-Nod.text" = "---";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "Z0S-79-Lq9"; */
+"Z0S-79-Lq9.placeholder" = "First Name";
+
+/* Class = "UINavigationItem"; title = "Priority"; ObjectID = "ZnS-aZ-4qN"; */
+"ZnS-aZ-4qN.title" = "Priority";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "ab8-ra-Gv8"; */
+"ab8-ra-Gv8.placeholder" = "City";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "d5K-ca-26q"; */
+"d5K-ca-26q.text" = "Email";
+
+/* Class = "UISegmentedControl"; d5b-ho-r7Z.segmentTitles[0] = "Male"; ObjectID = "d5b-ho-r7Z"; */
+"d5b-ho-r7Z.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; d5b-ho-r7Z.segmentTitles[1] = "Female"; ObjectID = "d5b-ho-r7Z"; */
+"d5b-ho-r7Z.segmentTitles[1]" = "Female";
+
+/* Class = "UILabel"; text = "Contact Name"; ObjectID = "dLX-vU-CeI"; */
+"dLX-vU-CeI.text" = "Contact Name";
+
+/* Class = "UILabel"; text = "Blood Type"; ObjectID = "f32-Oh-bXF"; */
+"f32-Oh-bXF.text" = "Blood Type";
+
+/* Class = "UITextField"; placeholder = "Work phone number"; ObjectID = "gi7-gP-od5"; */
+"gi7-gP-od5.placeholder" = "Work phone number";
+
+/* Class = "UINavigationItem"; title = "Details"; ObjectID = "hWe-CW-j1d"; */
+"hWe-CW-j1d.title" = "Details";
+
+/* Class = "UITextField"; placeholder = "Priority"; ObjectID = "hff-rW-XaA"; */
+"hff-rW-XaA.placeholder" = "Priority";
+
+/* Class = "UILabel"; text = "Weight"; ObjectID = "iSl-LG-XaN"; */
+"iSl-LG-XaN.text" = "Weight";
+
+/* Class = "UILabel"; text = "Contacts"; ObjectID = "lNu-LA-Ua0"; */
+"lNu-LA-Ua0.text" = "Contacts";
+
+/* Class = "UITextField"; placeholder = "Street address"; ObjectID = "ldY-s6-Jvv"; */
+"ldY-s6-Jvv.placeholder" = "Street address";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "m70-Hm-6hF"; */
+"m70-Hm-6hF.text" = "Address";
+
+/* Class = "UISegmentedControl"; nt8-fN-lgy.segmentTitles[0] = "cm"; ObjectID = "nt8-fN-lgy"; */
+"nt8-fN-lgy.segmentTitles[0]" = "cm";
+
+/* Class = "UISegmentedControl"; nt8-fN-lgy.segmentTitles[1] = "inch"; ObjectID = "nt8-fN-lgy"; */
+"nt8-fN-lgy.segmentTitles[1]" = "inch";
+
+/* Class = "UISegmentedControl"; nyr-JQ-reB.segmentTitles[0] = "+"; ObjectID = "nyr-JQ-reB"; */
+"nyr-JQ-reB.segmentTitles[0]" = "+";
+
+/* Class = "UISegmentedControl"; nyr-JQ-reB.segmentTitles[1] = "-"; ObjectID = "nyr-JQ-reB"; */
+"nyr-JQ-reB.segmentTitles[1]" = "-";
+
+/* Class = "UITextField"; placeholder = "Unit #"; ObjectID = "qO6-Jq-O1I"; */
+"qO6-Jq-O1I.placeholder" = "Unit #";
+
+/* Class = "UILabel"; text = "Other Devices"; ObjectID = "v0r-9w-DIN"; */
+"v0r-9w-DIN.text" = "Other Devices";
+
+/* Class = "UILabel"; text = "Apple Health"; ObjectID = "xIx-vY-92t"; */
+"xIx-vY-92t.text" = "Apple Health";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "zYR-k9-WF8"; */
+"zYR-k9-WF8.text" = "Home";
+
+/* Class = "UITextField"; placeholder = "Cell phone number"; ObjectID = "zdo-GG-jyF"; */
+"zdo-GG-jyF.placeholder" = "Cell phone number";
+
+/* Class = "UILabel"; text = "Addresses"; ObjectID = "zgq-Rj-lcV"; */
+"zgq-Rj-lcV.text" = "Addresses";
