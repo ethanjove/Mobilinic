@@ -22,7 +22,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeR-XL-Wxn" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwe-8m-fle" userLabel="Current ECG View" customClass="MyPanelView" customModule="PatientApp" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwe-8m-fle" userLabel="Current ECG View" customClass="BaseDashboardView" customModule="PatientApp" customModuleProvider="target">
                                                 <rect key="frame" x="3" y="5" width="594" height="110"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="89" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l5-c3-5qF">
@@ -144,20 +144,14 @@
                                                 <rect key="frame" x="3" y="118" width="594" height="56"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4aC-2F-Mxl">
-                                                        <rect key="frame" x="168" y="0.0" width="425" height="56"/>
+                                                        <rect key="frame" x="168" y="0.0" width="423" height="56"/>
                                                         <subviews>
-                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfM-2b-8Sk" customClass="TKChart">
-                                                                <rect key="frame" x="0.0" y="0.0" width="425" height="55"/>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfM-2b-8Sk" customClass="TKChart">
+                                                                <rect key="frame" x="0.0" y="0.0" width="1000" height="55"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <gestureRecognizers/>
                                                             </view>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="KfM-2b-8Sk" firstAttribute="leading" secondItem="4aC-2F-Mxl" secondAttribute="leading" id="ZE6-lD-UIW"/>
-                                                            <constraint firstAttribute="bottom" secondItem="KfM-2b-8Sk" secondAttribute="bottom" id="bZ6-q0-DD7"/>
-                                                            <constraint firstItem="KfM-2b-8Sk" firstAttribute="top" secondItem="4aC-2F-Mxl" secondAttribute="top" id="z51-kq-UHo"/>
-                                                            <constraint firstAttribute="trailing" secondItem="KfM-2b-8Sk" secondAttribute="trailing" id="zdj-jV-KUU"/>
-                                                        </constraints>
                                                     </scrollView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ecg" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXb-TQ-JLs">
                                                         <rect key="frame" x="2" y="0.0" width="21" height="14"/>
@@ -207,7 +201,7 @@
                                                     <constraint firstItem="4aC-2F-Mxl" firstAttribute="leading" secondItem="1ur-0e-qSs" secondAttribute="leading" constant="168" id="4Bv-Jg-bNj"/>
                                                     <constraint firstItem="4aC-2F-Mxl" firstAttribute="top" secondItem="1ur-0e-qSs" secondAttribute="top" id="Chl-yJ-xYW"/>
                                                     <constraint firstAttribute="bottom" secondItem="4aC-2F-Mxl" secondAttribute="bottom" id="S40-bX-lp9"/>
-                                                    <constraint firstAttribute="trailing" secondItem="4aC-2F-Mxl" secondAttribute="trailing" id="u6c-9g-0DH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4aC-2F-Mxl" secondAttribute="trailing" constant="3" id="u6c-9g-0DH"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2TN-ak-luD" userLabel="Body Temp View" customClass="MyPanelView" customModule="PatientApp" customModuleProvider="target">
@@ -250,26 +244,20 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ryZ-ou-hx1" userLabel="Body Temp Scroll View">
-                                                        <rect key="frame" x="168" y="0.0" width="426" height="62"/>
+                                                        <rect key="frame" x="168" y="0.0" width="423" height="62"/>
                                                         <subviews>
-                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPL-Qt-XFa" customClass="TKChart">
-                                                                <rect key="frame" x="0.0" y="0.0" width="426" height="62"/>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPL-Qt-XFa" customClass="TKChart">
+                                                                <rect key="frame" x="0.0" y="0.0" width="1000" height="62"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <gestureRecognizers/>
                                                             </view>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="VPL-Qt-XFa" secondAttribute="bottom" id="LDh-nN-HdI"/>
-                                                            <constraint firstItem="VPL-Qt-XFa" firstAttribute="leading" secondItem="ryZ-ou-hx1" secondAttribute="leading" id="LKY-ZM-ceE"/>
-                                                            <constraint firstAttribute="trailing" secondItem="VPL-Qt-XFa" secondAttribute="trailing" id="hZb-KB-5tu"/>
-                                                            <constraint firstItem="VPL-Qt-XFa" firstAttribute="top" secondItem="ryZ-ou-hx1" secondAttribute="top" id="yEr-Ax-cPx"/>
-                                                        </constraints>
                                                     </scrollView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="ryZ-ou-hx1" secondAttribute="bottom" id="AHE-le-TEa"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ryZ-ou-hx1" secondAttribute="trailing" id="Owt-fg-u01"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ryZ-ou-hx1" secondAttribute="trailing" constant="3" id="Owt-fg-u01"/>
                                                     <constraint firstItem="ryZ-ou-hx1" firstAttribute="leading" secondItem="2TN-ak-luD" secondAttribute="leading" constant="168" id="gEc-a8-jZD"/>
                                                     <constraint firstItem="ryZ-ou-hx1" firstAttribute="top" secondItem="2TN-ak-luD" secondAttribute="top" id="pHV-A7-J2d"/>
                                                 </constraints>
@@ -320,32 +308,93 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1oT-cX-9NI" userLabel="SpO2 Scroll View">
-                                                        <rect key="frame" x="168" y="0.0" width="426" height="62"/>
+                                                        <rect key="frame" x="168" y="0.0" width="423" height="62"/>
                                                         <subviews>
-                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-KB-CqG" userLabel="SpO2 Chart" customClass="TKChart">
-                                                                <rect key="frame" x="0.0" y="0.0" width="426" height="62"/>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-KB-CqG" userLabel="SpO2 Chart" customClass="TKChart">
+                                                                <rect key="frame" x="0.0" y="0.0" width="1000" height="62"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <gestureRecognizers/>
                                                             </view>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="SNW-KB-CqG" secondAttribute="bottom" id="63T-ZI-0CX"/>
-                                                            <constraint firstAttribute="trailing" secondItem="SNW-KB-CqG" secondAttribute="trailing" constant="50" id="Asv-J9-dTv"/>
-                                                            <constraint firstItem="SNW-KB-CqG" firstAttribute="top" secondItem="1oT-cX-9NI" secondAttribute="top" id="N6r-tz-fQD"/>
-                                                            <constraint firstItem="SNW-KB-CqG" firstAttribute="leading" secondItem="1oT-cX-9NI" secondAttribute="leading" id="T8g-5H-oBx"/>
-                                                        </constraints>
                                                     </scrollView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="1oT-cX-9NI" firstAttribute="top" secondItem="BUz-aA-ojB" secondAttribute="top" id="C8Z-FQ-VIm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1oT-cX-9NI" secondAttribute="trailing" constant="3" id="Enb-vM-UEi"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1oT-cX-9NI" secondAttribute="bottom" id="FmS-02-HHE"/>
+                                                    <constraint firstItem="1oT-cX-9NI" firstAttribute="leading" secondItem="BUz-aA-ojB" secondAttribute="leading" constant="168" id="mud-Nh-0Gj"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KN9-iE-vZS" userLabel="Blood Pressure View" customClass="MyPanelView" customModule="PatientApp" customModuleProvider="target">
+                                                <rect key="frame" x="3" y="307" width="594" height="62"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mm Hg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYU-OS-hWd">
+                                                        <rect key="frame" x="111" y="15" width="54" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="blood" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGO-x7-dEd">
+                                                        <rect key="frame" x="2" y="0.0" width="31" height="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pressure" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQO-FN-lPr">
+                                                        <rect key="frame" x="2" y="10" width="44" height="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="117" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy3-2n-QpT">
+                                                        <rect key="frame" x="59" y="6" width="39" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <color key="textColor" red="0.0" green="0.36391649780000002" blue="0.72827888259999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="76" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGP-cp-bOY">
+                                                        <rect key="frame" x="59" y="31" width="39" height="23"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <color key="textColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Nk-Ub-DTP" userLabel="BP Scroll View">
+                                                        <rect key="frame" x="168" y="0.0" width="423" height="62"/>
+                                                        <subviews>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ME-Mh-kI8" userLabel="BP Chart" customClass="TKChart">
+                                                                <rect key="frame" x="0.0" y="0.0" width="1000" height="62"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                        </subviews>
+                                                    </scrollView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="______" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5d-1i-sTg">
+                                                        <rect key="frame" x="49" y="15" width="62" height="15"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="4Nk-Ub-DTP" firstAttribute="leading" secondItem="KN9-iE-vZS" secondAttribute="leading" constant="168" id="9RO-AG-8YC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4Nk-Ub-DTP" secondAttribute="bottom" id="aH3-xf-N87"/>
+                                                    <constraint firstItem="4Nk-Ub-DTP" firstAttribute="top" secondItem="KN9-iE-vZS" secondAttribute="top" id="lcp-jZ-6bO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4Nk-Ub-DTP" secondAttribute="trailing" constant="3" id="zgA-nh-1E5"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="KN9-iE-vZS" secondAttribute="trailing" constant="3" id="0pi-iW-AYe"/>
                                             <constraint firstItem="Xwe-8m-fle" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="5" id="7NE-7Y-9YA"/>
                                             <constraint firstItem="Xwe-8m-fle" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="8bh-o1-2uh"/>
+                                            <constraint firstItem="KN9-iE-vZS" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="307" id="Aw1-Rw-4GP"/>
                                             <constraint firstItem="1ur-0e-qSs" firstAttribute="top" secondItem="Xwe-8m-fle" secondAttribute="bottom" constant="3" id="HWV-mw-qMn"/>
                                             <constraint firstItem="BUz-aA-ojB" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="242" id="J07-Lv-Vw6"/>
                                             <constraint firstItem="BUz-aA-ojB" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="LAy-R4-gzO"/>
+                                            <constraint firstItem="KN9-iE-vZS" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="Pyv-IN-Um5"/>
                                             <constraint firstAttribute="trailing" secondItem="Xwe-8m-fle" secondAttribute="trailing" constant="3" id="Xaz-MP-2nW"/>
                                             <constraint firstAttribute="trailing" secondItem="2TN-ak-luD" secondAttribute="trailing" constant="3" id="fa6-5h-Rpn"/>
                                             <constraint firstItem="2TN-ak-luD" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="plC-iq-4ws"/>
@@ -378,6 +427,8 @@
                     <connections>
                         <outlet property="BodyTemperatureHistoryScrollView" destination="ryZ-ou-hx1" id="AxB-ns-OMK"/>
                         <outlet property="EcgHistoryScrollView" destination="4aC-2F-Mxl" id="3HE-KA-DmD"/>
+                        <outlet property="bloodPressureHistoryChart" destination="3ME-Mh-kI8" id="VG1-me-lZ5"/>
+                        <outlet property="bloodPressureHistoryScrollView" destination="4Nk-Ub-DTP" id="BxH-Go-TvM"/>
                         <outlet property="bodyTemperatureHistoryChart" destination="VPL-Qt-XFa" id="i2H-Nf-APO"/>
                         <outlet property="currentBpmLabel" destination="JHJ-E9-qtV" id="tNS-d3-mfc"/>
                         <outlet property="currentHeartbitChart" destination="Bnv-7p-YIU" id="TN4-4z-bSw"/>

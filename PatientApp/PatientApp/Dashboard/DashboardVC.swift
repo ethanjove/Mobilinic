@@ -21,14 +21,13 @@ class DashboardVC: UIViewController {
         super.viewDidLoad()
         
         //self.mainScrollView.contentSize.height=UIScreen.mainScreen().bounds.size.height;
-
-        
         
         setupCurrentHeartbitChart()
         drawHeartbit();
         setupEcgHistoryChart()
         setupBodyTemperatureHistoryChart()
         setupSpO2HistoryChart()
+        setupBloodPressureHistoryChart()
         
         // Do any additional setup after loading the view.
     }
@@ -36,6 +35,11 @@ class DashboardVC: UIViewController {
     
     
     //  ==== HEART BITS  ========
+
+    @IBOutlet weak var heartbitHistoryChart: TKChart!
+    @IBOutlet weak var currentHeartbitChart: TKChart!
+    @IBOutlet weak var currentBpmLabel: UILabel!
+    
 
     func setupCurrentHeartbitChart() {
         let ecgData = NSMutableArray()
@@ -117,12 +121,6 @@ class DashboardVC: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    @IBOutlet weak var heartbitHistoryChart: TKChart!
-
-    
-    @IBOutlet weak var currentHeartbitChart: TKChart!
-    @IBOutlet weak var currentBpmLabel: UILabel!
-    
     
     @IBAction func slow(sender: AnyObject) {
         self.heartbit = 40
@@ -158,13 +156,15 @@ class DashboardVC: UIViewController {
     func setupEcgHistoryChart() {
         
         EcgHistoryScrollView.contentSize.width = 1000
+        EcgHistoryScrollView.setContentOffset(CGPointMake(950, 0), animated: true)
+
         
         var dataPoints = [TKChartDataPoint]()
         
         let values = [957,983,974,939,980,954,990,991,1023,1010,1038,977,936,964,973,910,1949,1183,975,960,937,974,945,977,1006,1022,1022,1032,1031,1008,980,938]
         //let values = [36.5, 35.5, 36.2, 37.1, 0, 36, 36, 36, 37, 36, 0, 36, 36, 37, 36]
         
-        for var sec = 0; sec < 10; ++sec {
+        for var sec = 0; sec < 20; ++sec {
             for var i = 0; i < values.count; ++i {
                 dataPoints.append(TKChartDataPoint(x: dataPoints.count+1, y: values[i]))
             }
@@ -201,13 +201,14 @@ class DashboardVC: UIViewController {
     func setupBodyTemperatureHistoryChart() {
         
         BodyTemperatureHistoryScrollView.contentSize.width = 1000
+        BodyTemperatureHistoryScrollView.setContentOffset(CGPointMake(950, 0), animated: true)
         
         var normalValueDataPoints = [TKChartDataPoint]()
         var highValueDataPoints = [TKChartDataPoint]()
         
         let normalValues = [36.5, 35.5, 36.2, 37.1, 0, 36, 36, 36, 37, 36, 0, 36, 36, 37, 36]
         
-        for var repeat=0 ; repeat<3; ++repeat {
+        for var repeat=0 ; repeat<6; ++repeat {
             for var i = 0; i < normalValues.count; ++i {
                 normalValueDataPoints.append(TKChartDataPoint(x: normalValueDataPoints.count, y: normalValues[i]))
             }
@@ -215,7 +216,7 @@ class DashboardVC: UIViewController {
         
         let highValues = [0, 0, 0, 0, 38.0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0]
         
-        for var repeat=0 ; repeat<3; ++repeat {
+        for var repeat=0 ; repeat<6; ++repeat {
             for var i = 0; i < highValues.count; ++i {
                 highValueDataPoints.append(TKChartDataPoint(x: highValueDataPoints.count, y: highValues[i]))
             }
@@ -250,7 +251,7 @@ class DashboardVC: UIViewController {
         
         self.bodyTemperatureHistoryChart.addSeries(seriesHigh)
         
-        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 45)
+        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 90)
         xAxis.position = TKChartAxisPosition.Bottom
         xAxis.style.lineHidden = true
         xAxis.style.majorTickStyle.ticksHidden = true
@@ -292,12 +293,13 @@ class DashboardVC: UIViewController {
     func setupSpO2HistoryChart() {
         
         spO2HistoryScrollView.contentSize.width = 1000
+        spO2HistoryScrollView.setContentOffset(CGPointMake(950, 0), animated: true)
         
         var dataPoints = [TKChartDataPoint]()
         
         let values = [94.5, 94.5, 94.2, 94.1, 94, 96.1, 96, 96.1, 97.1, 96.2, 96, 95.2, 95.1, 94.8, 94]
         
-        for var repeat=0 ; repeat<3; ++repeat {
+        for var repeat=0 ; repeat<6; ++repeat {
             for var i = 0; i < values.count; ++i {
                 dataPoints.append(TKChartDataPoint(x: dataPoints.count, y: values[i]))
             }
@@ -306,7 +308,7 @@ class DashboardVC: UIViewController {
         let series = TKChartSplineAreaSeries(items: dataPoints)
         self.spO2HistoryChart.addSeries(series)
         
-        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 45)
+        let xAxis = TKChartNumericAxis(minimum: 0, andMaximum: 60)
         xAxis.position = TKChartAxisPosition.Bottom
         xAxis.style.lineHidden = true
         xAxis.style.majorTickStyle.ticksHidden = true
@@ -316,15 +318,77 @@ class DashboardVC: UIViewController {
         var maxValue = maxElement(values)
         var minValue = minElement(values)
         
-        let yAxis = TKChartNumericAxis(minimum: minValue-2, andMaximum: maxValue)
+        let yAxis = TKChartNumericAxis(minimum: minValue-1, andMaximum: maxValue+1)
         yAxis.position = TKChartAxisPosition.Left
         yAxis.style.lineHidden = true
         yAxis.style.majorTickStyle.ticksHidden = true
         yAxis.style.labelStyle.textHidden = true
         self.spO2HistoryChart.yAxis = yAxis
+     
         
     }
 
+    //  ====  BLOOD PRESSURE ==========
+    
+    
+    @IBOutlet weak var bloodPressureHistoryScrollView: UIScrollView!
+    @IBOutlet weak var bloodPressureHistoryChart: TKChart!
+    
+    func setupBloodPressureHistoryChart() {
+        
+        bloodPressureHistoryScrollView.contentSize.width = 1000
+        bloodPressureHistoryScrollView.setContentOffset(CGPointMake(950, 0), animated: true)
+        
+        var SPdataPoints = [TKChartDataPoint]()
+        var DPdataPoints = [TKChartDataPoint]()
+        
+        let SPvalues = [110, 114, 117, 120, 125, 122, 124, 120, 118, 117, 115, 110, 112, 112, 114]
+        let DPvalues = [75, 70, 65, 68, 70, 72, 75, 75, 77, 80, 76, 75, 73, 70, 72]
+        
+        for var repeat=0 ; repeat<6; ++repeat {
+            for var i = 0; i < SPvalues.count; ++i {
+                SPdataPoints.append(TKChartDataPoint(x: SPdataPoints.count, y: SPvalues[i]))
+                DPdataPoints.append(TKChartDataPoint(x: DPdataPoints.count, y: DPvalues[i]))
+            }
+        }
+        
+        let SPseries = TKChartLineSeries(items: SPdataPoints)
+        SPseries.title = "SP"
+        self.bloodPressureHistoryChart.addSeries(SPseries)
+        
+        let DPseries = TKChartLineSeries(items: DPdataPoints)
+        DPseries.title = "DP"
+        self.bloodPressureHistoryChart.addSeries(DPseries)
+        
+        
+        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 60)
+        xAxis.position = TKChartAxisPosition.Bottom
+        xAxis.style.lineHidden = true
+        xAxis.style.majorTickStyle.ticksHidden = true
+        xAxis.style.labelStyle.textHidden = true
+        self.bloodPressureHistoryChart.xAxis = xAxis
+        
+        var maxValue = maxElement(SPvalues)
+        var minValue = minElement(DPvalues)
+        
+        let yAxis = TKChartNumericAxis(minimum: minValue-1, andMaximum: maxValue+1)
+        yAxis.position = TKChartAxisPosition.Left
+        yAxis.style.lineHidden = true
+        yAxis.style.majorTickStyle.ticksHidden = true
+        yAxis.style.labelStyle.textHidden = true
+        self.bloodPressureHistoryChart.yAxis = yAxis
+        
+        
+        
+    }
+
+    
+    
+    
+    
+    
+    
+    
     
     /*
     // MARK: - Navigation
