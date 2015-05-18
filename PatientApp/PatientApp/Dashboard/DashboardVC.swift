@@ -11,6 +11,8 @@ import Foundation
 
 class DashboardVC: UIViewController {
 
+    @IBOutlet weak var mainScrollView: UIScrollView!
+    
     var heartbitTimer : NSTimer? = nil
     var heartbit : Int = 60
     var animateHeartbit : Bool = true
@@ -18,13 +20,22 @@ class DashboardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.mainScrollView.contentSize.height=UIScreen.mainScreen().bounds.size.height;
+
+        
+        
         setupCurrentHeartbitChart()
         drawHeartbit();
-        
+        setupEcgHistoryChart()
         setupBodyTemperatureHistoryChart()
+        setupSpO2HistoryChart()
         
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    //  ==== HEART BITS  ========
 
     func setupCurrentHeartbitChart() {
         let ecgData = NSMutableArray()
@@ -93,6 +104,7 @@ class DashboardVC: UIViewController {
         }
         self.currentHeartbitChart.hidden = false;
         self.currentHeartbitChart.reloadData();
+        
     }
     
 
@@ -137,21 +149,76 @@ class DashboardVC: UIViewController {
         }
     }
     
+    //  ===  ECG STATUS HISTORY   =====
+    
+    @IBOutlet weak var EcgHistoryScrollView: UIScrollView!
+    
+    @IBOutlet weak var ecgHistoryChart: TKChart!
+    
+    func setupEcgHistoryChart() {
+        
+        EcgHistoryScrollView.contentSize.width = 1000
+        
+        var dataPoints = [TKChartDataPoint]()
+        
+        let values = [957,983,974,939,980,954,990,991,1023,1010,1038,977,936,964,973,910,1949,1183,975,960,937,974,945,977,1006,1022,1022,1032,1031,1008,980,938]
+        //let values = [36.5, 35.5, 36.2, 37.1, 0, 36, 36, 36, 37, 36, 0, 36, 36, 37, 36]
+        
+        for var sec = 0; sec < 10; ++sec {
+            for var i = 0; i < values.count; ++i {
+                dataPoints.append(TKChartDataPoint(x: dataPoints.count+1, y: values[i]))
+            }
+        }
+        
+        
+        let lineSeries = TKChartLineSeries(items: dataPoints)
+        lineSeries.style.palette = TKChartPalette()
+        let strokeRed = TKStroke(color: UIColor.redColor(), width: 1.5)
+        lineSeries.style.palette.addPaletteItem(TKChartPaletteItem(stroke: strokeRed))
+        self.ecgHistoryChart.addSeries(lineSeries)
+        
+        let yAxis = TKChartNumericAxis(minimum: minElement(values), andMaximum: maxElement(values))
+        yAxis.position = TKChartAxisPosition.Left
+        yAxis.offset = 0
+        yAxis.baseline = 0
+        self.ecgHistoryChart.yAxis = yAxis
+        self.ecgHistoryChart.yAxis.style.majorTickStyle.ticksHidden = true
+        self.ecgHistoryChart.yAxis.style.labelStyle.textHidden = true
+    
+        let axisColor = TKStroke(color: UIColor.redColor(), width: 0)
+        self.ecgHistoryChart.xAxis.style.lineStroke = axisColor
+        //self.ecgHistoryChart.xAxis.hidden = true
+        self.ecgHistoryChart.xAxis.style.majorTickStyle.ticksHidden = true
+        self.ecgHistoryChart.xAxis.style.labelStyle.textHidden = true
+    }
+    
+    
+    //  === BODY TEMPERATURE ===
+    
+    @IBOutlet weak var BodyTemperatureHistoryScrollView: UIScrollView!
     @IBOutlet weak var bodyTemperatureHistoryChart: TKChart!
     
     func setupBodyTemperatureHistoryChart() {
+        
+        BodyTemperatureHistoryScrollView.contentSize.width = 1000
         
         var normalValueDataPoints = [TKChartDataPoint]()
         var highValueDataPoints = [TKChartDataPoint]()
         
         let normalValues = [36.5, 35.5, 36.2, 37.1, 0, 36, 36, 36, 37, 36, 0, 36, 36, 37, 36]
-        for var i = 0; i < normalValues.count; ++i {
-            normalValueDataPoints.append(TKChartDataPoint(x: i, y: normalValues[i]))
+        
+        for var repeat=0 ; repeat<3; ++repeat {
+            for var i = 0; i < normalValues.count; ++i {
+                normalValueDataPoints.append(TKChartDataPoint(x: normalValueDataPoints.count, y: normalValues[i]))
+            }
         }
         
         let highValues = [0, 0, 0, 0, 38.0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0]
-        for var i = 0; i < highValues.count; ++i {
-            highValueDataPoints.append(TKChartDataPoint(x: i, y: highValues[i]))
+        
+        for var repeat=0 ; repeat<3; ++repeat {
+            for var i = 0; i < highValues.count; ++i {
+                highValueDataPoints.append(TKChartDataPoint(x: highValueDataPoints.count, y: highValues[i]))
+            }
         }
         
         let stackInfo = TKChartStackInfo(ID: 1, withStackMode: TKChartStackMode.Stack)
@@ -183,7 +250,7 @@ class DashboardVC: UIViewController {
         
         self.bodyTemperatureHistoryChart.addSeries(seriesHigh)
         
-        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 15)
+        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 45)
         xAxis.position = TKChartAxisPosition.Bottom
         xAxis.style.lineHidden = true
         xAxis.style.majorTickStyle.ticksHidden = true
@@ -217,7 +284,47 @@ class DashboardVC: UIViewController {
         
     }
     
+    //  === SPO2 ===
     
+    @IBOutlet weak var spO2HistoryScrollView: UIScrollView!
+    @IBOutlet weak var spO2HistoryChart: TKChart!
+    
+    func setupSpO2HistoryChart() {
+        
+        spO2HistoryScrollView.contentSize.width = 1000
+        
+        var dataPoints = [TKChartDataPoint]()
+        
+        let values = [94.5, 94.5, 94.2, 94.1, 94, 96.1, 96, 96.1, 97.1, 96.2, 96, 95.2, 95.1, 94.8, 94]
+        
+        for var repeat=0 ; repeat<3; ++repeat {
+            for var i = 0; i < values.count; ++i {
+                dataPoints.append(TKChartDataPoint(x: dataPoints.count, y: values[i]))
+            }
+        }
+        
+        let series = TKChartSplineAreaSeries(items: dataPoints)
+        self.spO2HistoryChart.addSeries(series)
+        
+        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 45)
+        xAxis.position = TKChartAxisPosition.Bottom
+        xAxis.style.lineHidden = true
+        xAxis.style.majorTickStyle.ticksHidden = true
+        xAxis.style.labelStyle.textHidden = true
+        self.spO2HistoryChart.xAxis = xAxis
+        
+        var maxValue = maxElement(values)
+        var minValue = minElement(values)
+        
+        let yAxis = TKChartNumericAxis(minimum: minValue-2, andMaximum: maxValue)
+        yAxis.position = TKChartAxisPosition.Left
+        yAxis.style.lineHidden = true
+        yAxis.style.majorTickStyle.ticksHidden = true
+        yAxis.style.labelStyle.textHidden = true
+        self.spO2HistoryChart.yAxis = yAxis
+        
+    }
+
     
     /*
     // MARK: - Navigation
