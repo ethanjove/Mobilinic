@@ -54,6 +54,7 @@ class ContactDetailsVC: UIViewController,
         contact.contactID   = existingContact.contactID; // if new contact the contactID will be zero
         contact.firstname   = self.firstNameTextField.text
         contact.lastname    = self.lastNameTextField.text
+        contact.relationTypeID = self.selectedRelationshipID
         
         ContactManager.instance.saveContact(contact)
         

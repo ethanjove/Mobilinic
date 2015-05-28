@@ -83,6 +83,7 @@ class ContactManager {
             " ContactID" +
             ",FirstName" +
             ",LastName" +
+            ",RelationTypeID" +
         " FROM Contact " +
         " ORDER By FirstName, LastName"
         
@@ -98,6 +99,7 @@ class ContactManager {
                 contact.contactID   = Int(resultSet.intForColumn("ContactID"))
                 contact.firstname   = resultSet.stringForColumn("FirstName")
                 contact.lastname    = resultSet.stringForColumn("LastName")
+                contact.relationTypeID = Int(resultSet.intForColumn("RelationTypeID"))
                 
                 contactList.append(contact)
             }

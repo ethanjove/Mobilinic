@@ -20,6 +20,8 @@
 		185B312C1A9EE63C00273B99 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B312B1A9EE63C00273B99 /* DatabaseManager.swift */; };
 		185B31331A9EF1D400273B99 /* PatientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B31321A9EF1D400273B99 /* PatientManager.swift */; };
 		185E6DCE1B099C01003F8109 /* BaseDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DCD1B099C01003F8109 /* BaseDashboardView.swift */; };
+		185E6DD21B0AC62E003F8109 /* HealthDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */; };
+		185E6DD41B0AC68F003F8109 /* HealthDataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */; };
 		1865B4501A911BF9003FAA89 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865B44F1A911BF9003FAA89 /* MainVC.swift */; };
 		186B86FF1AA69EEA00C0E5DE /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */; };
 		186B87011AA6B69700C0E5DE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B87001AA6B69700C0E5DE /* Contact.swift */; };
@@ -37,7 +39,6 @@
 		18ACECDE1AA3C1E3005700BE /* ContactSettingsNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACECDD1AA3C1E3005700BE /* ContactSettingsNC.swift */; };
 		18B721EE1A95BC3E00B3CF72 /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B721ED1A95BC3E00B3CF72 /* MyDatePickerView.swift */; };
 		18B721F01A95BC7100B3CF72 /* MyDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B721EF1A95BC7100B3CF72 /* MyDatePickerView.xib */; };
-		18B721F21A95C0F600B3CF72 /* HealthData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B721F11A95C0F600B3CF72 /* HealthData.storyboard */; };
 		18BAFAB91A990FBC00B5556F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAFAB81A990FBC00B5556F /* Person.swift */; };
 		18BAFABB1A9910FD00B5556F /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAFABA1A9910FD00B5556F /* Patient.swift */; };
 		18BAFABE1A99530A00B5556F /* PatientSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BAFABD1A99530A00B5556F /* PatientSettings.storyboard */; };
@@ -65,13 +66,13 @@
 		18E43C051AA7FCC400E05D22 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E43C041AA7FCC400E05D22 /* ContactManager.swift */; };
 		18E43C091AA8EF4200E05D22 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E43C081AA8EF4200E05D22 /* ContactListCell.swift */; };
 		18E43C0D1AA94E6400E05D22 /* ContactRelationshipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E43C0C1AA94E6400E05D22 /* ContactRelationshipVC.swift */; };
+		18EA7F251B16B86600C68080 /* HealthData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EA7F271B16B86600C68080 /* HealthData.storyboard */; };
 		18EABBBE1AB36238000768D6 /* DashboardNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EABBBD1AB36238000768D6 /* DashboardNC.swift */; };
 		18EABBC01AB3BF23000768D6 /* MyPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EABBBF1AB3BF23000768D6 /* MyPanelView.swift */; };
 		18EB69781AA01F0700D9962C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB69771AA01F0700D9962C /* Util.swift */; };
 		18F13F491A918AA200807304 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F481A918AA200807304 /* DashboardVC.swift */; };
 		18F13F4B1A91905B00807304 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F4A1A91905B00807304 /* StoryboardManager.swift */; };
 		18F13F4F1A91C91000807304 /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F13F4E1A91C91000807304 /* Community.storyboard */; };
-		18F13F531A91C95600807304 /* HealthDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F521A91C95600807304 /* HealthDataVC.swift */; };
 		18F13F551A91C96F00807304 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F541A91C96F00807304 /* CommunityVC.swift */; };
 		18F13F571A91C98700807304 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F13F561A91C98700807304 /* SettingsVC.swift */; };
 		18F80AB31AA15DCD00BA2AF0 /* Mobilinic.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 18EB69761AA0163E00D9962C /* Mobilinic.sqlite */; };
@@ -138,6 +139,8 @@
 		185B312B1A9EE63C00273B99 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = DAL/DatabaseManager.swift; sourceTree = "<group>"; };
 		185B31321A9EF1D400273B99 /* PatientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientManager.swift; path = DAL/PatientManager.swift; sourceTree = "<group>"; };
 		185E6DCD1B099C01003F8109 /* BaseDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseDashboardView.swift; path = Dashboard/Views/BaseDashboardView.swift; sourceTree = "<group>"; };
+		185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataVC.swift; path = HealthData/HealthDataVC.swift; sourceTree = "<group>"; };
+		185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataTableVC.swift; path = HealthData/HealthDataTableVC.swift; sourceTree = "<group>"; };
 		1865B44F1A911BF9003FAA89 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBar.swift; path = Presentation/Main/MainTabBar.swift; sourceTree = "<group>"; };
 		186B87001AA6B69700C0E5DE /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/Contact.swift; sourceTree = "<group>"; };
@@ -155,7 +158,6 @@
 		18ACECDD1AA3C1E3005700BE /* ContactSettingsNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactSettingsNC.swift; path = Settings/NavigationControllers/ContactSettingsNC.swift; sourceTree = "<group>"; };
 		18B721ED1A95BC3E00B3CF72 /* MyDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDatePickerView.swift; path = Common/MyDatePickerView.swift; sourceTree = "<group>"; };
 		18B721EF1A95BC7100B3CF72 /* MyDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDatePickerView.xib; sourceTree = "<group>"; };
-		18B721F11A95C0F600B3CF72 /* HealthData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HealthData.storyboard; path = HealthData/HealthData.storyboard; sourceTree = "<group>"; };
 		18BAFAB81A990FBC00B5556F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
 		18BAFABA1A9910FD00B5556F /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = Model/Patient.swift; sourceTree = "<group>"; };
 		18BAFABD1A99530A00B5556F /* PatientSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PatientSettings.storyboard; path = Settings/Patient/PatientSettings.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,11 @@
 		18E43C041AA7FCC400E05D22 /* ContactManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
 		18E43C081AA8EF4200E05D22 /* ContactListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactListCell.swift; path = Settings/Contact/ContactListCell.swift; sourceTree = "<group>"; };
 		18E43C0C1AA94E6400E05D22 /* ContactRelationshipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactRelationshipVC.swift; path = Settings/Contact/ContactRelationshipVC.swift; sourceTree = "<group>"; };
+		18EA7F261B16B86600C68080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthData.storyboard; sourceTree = "<group>"; };
+		18EA7F291B16B87100C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/HealthData.strings; sourceTree = "<group>"; };
+		18EA7F2B1B16B9AB00C68080 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HealthData.strings; sourceTree = "<group>"; };
+		18EA7F2D1B16B9B400C68080 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/HealthData.strings; sourceTree = "<group>"; };
+		18EA7F2F1B16B9B700C68080 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HealthData.strings; sourceTree = "<group>"; };
 		18EABBBD1AB36238000768D6 /* DashboardNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardNC.swift; path = Dashboard/DashboardNC.swift; sourceTree = "<group>"; };
 		18EABBBF1AB3BF23000768D6 /* MyPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPanelView.swift; path = Common/MyPanelView.swift; sourceTree = "<group>"; };
 		18EB69761AA0163E00D9962C /* Mobilinic.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mobilinic.sqlite; path = LocalDB/Mobilinic.sqlite; sourceTree = "<group>"; };
@@ -197,7 +204,6 @@
 		18F13F481A918AA200807304 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardVC.swift; path = Dashboard/DashboardVC.swift; sourceTree = "<group>"; };
 		18F13F4A1A91905B00807304 /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
 		18F13F4E1A91C91000807304 /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Community.storyboard; path = Community/Community.storyboard; sourceTree = "<group>"; };
-		18F13F521A91C95600807304 /* HealthDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataVC.swift; path = HealthData/HealthDataVC.swift; sourceTree = "<group>"; };
 		18F13F541A91C96F00807304 /* CommunityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommunityVC.swift; path = Community/CommunityVC.swift; sourceTree = "<group>"; };
 		18F13F561A91C98700807304 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = Settings/SettingsVC.swift; sourceTree = "<group>"; };
 		18F13F581A91D6AD00807304 /* PatientApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PatientApp.entitlements; sourceTree = "<group>"; };
@@ -342,8 +348,9 @@
 		1865B44C1A911A75003FAA89 /* HealthData */ = {
 			isa = PBXGroup;
 			children = (
-				18F13F521A91C95600807304 /* HealthDataVC.swift */,
-				18B721F11A95C0F600B3CF72 /* HealthData.storyboard */,
+				185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */,
+				185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */,
+				18EA7F271B16B86600C68080 /* HealthData.storyboard */,
 			);
 			name = HealthData;
 			sourceTree = "<group>";
@@ -608,6 +615,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA7F251B16B86600C68080 /* HealthData.storyboard in Resources */,
 				18F80AB31AA15DCD00BA2AF0 /* Mobilinic.sqlite in Resources */,
 				18572E601B0479CE00B09DE5 /* InfoPlist.strings in Resources */,
 				18F13F4F1A91C91000807304 /* Community.storyboard in Resources */,
@@ -615,7 +623,6 @@
 				18B721F01A95BC7100B3CF72 /* MyDatePickerView.xib in Resources */,
 				18FA98471A8E5CDE008F7CDD /* LaunchScreen.xib in Resources */,
 				18BAFABE1A99530A00B5556F /* PatientSettings.storyboard in Resources */,
-				18B721F21A95C0F600B3CF72 /* HealthData.storyboard in Resources */,
 				18FA98441A8E5CDE008F7CDD /* Images.xcassets in Resources */,
 				18572E761B059C9200B09DE5 /* Localizable.strings in Resources */,
 				18572E6F1B0598F400B09DE5 /* Dashboard.storyboard in Resources */,
@@ -650,16 +657,17 @@
 				18EABBC01AB3BF23000768D6 /* MyPanelView.swift in Sources */,
 				18E000D01A9FFE23005A228C /* FMDatabase.m in Sources */,
 				18BAFAC01A9953A100B5556F /* PatientSettingsVC.swift in Sources */,
-				18F13F531A91C95600807304 /* HealthDataVC.swift in Sources */,
 				18EB69781AA01F0700D9962C /* Util.swift in Sources */,
 				18BF814A1AAA94B9003A0B27 /* RelationshipManager.swift in Sources */,
 				1875A38E1AAFF0AB0070367B /* ContactPriorityVC.swift in Sources */,
 				18E43C011AA7FA6700E05D22 /* ContactListVC.swift in Sources */,
+				185E6DD41B0AC68F003F8109 /* HealthDataTableVC.swift in Sources */,
 				1865B4501A911BF9003FAA89 /* MainVC.swift in Sources */,
 				18E000D11A9FFE23005A228C /* FMDatabaseAdditions.m in Sources */,
 				18F80AB71AA1973700BA2AF0 /* FMDatabaseVariadic.swift in Sources */,
 				18E43C0D1AA94E6400E05D22 /* ContactRelationshipVC.swift in Sources */,
 				18E43BFF1AA7F79A00E05D22 /* ContactDetailsVC.swift in Sources */,
+				185E6DD21B0AC62E003F8109 /* HealthDataVC.swift in Sources */,
 				18B721EE1A95BC3E00B3CF72 /* MyDatePickerView.swift in Sources */,
 				18E43C091AA8EF4200E05D22 /* ContactListCell.swift in Sources */,
 				1875A3901AAFF3440070367B /* Priority.swift in Sources */,
@@ -757,6 +765,19 @@
 			);
 			name = Localizable.strings;
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		18EA7F271B16B86600C68080 /* HealthData.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EA7F261B16B86600C68080 /* Base */,
+				18EA7F291B16B87100C68080 /* tr */,
+				18EA7F2B1B16B9AB00C68080 /* en */,
+				18EA7F2D1B16B9B400C68080 /* ru */,
+				18EA7F2F1B16B9B700C68080 /* ar */,
+			);
+			name = HealthData.storyboard;
+			path = HealthData;
 			sourceTree = "<group>";
 		};
 		18FA98401A8E5CDE008F7CDD /* Main.storyboard */ = {

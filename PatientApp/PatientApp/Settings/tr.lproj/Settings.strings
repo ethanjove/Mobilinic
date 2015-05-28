@@ -24,7 +24,7 @@
 "7HH-Re-gex.text" = "---";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "8M6-yh-W6Z"; */
-"8M6-yh-W6Z.text" = "Title";
+"8M6-yh-W6Z.text" = "Hitap";
 
 /* Class = "UILabel"; text = "Hasta"; ObjectID = "9Gx-f4-g30"; */
 "9Gx-f4-g30.text" = "Hasta";
@@ -57,7 +57,7 @@
 "E4Q-U9-NIN.text" = "Hastane";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "EfO-wg-3JG"; */
-"EfO-wg-3JG.text" = "Title";
+"EfO-wg-3JG.text" = "Hitap";
 
 /* Class = "UITextField"; placeholder = "Ev Telefonu"; ObjectID = "FF3-zR-ldc"; */
 "FF3-zR-ldc.placeholder" = "Ev Telefonu";

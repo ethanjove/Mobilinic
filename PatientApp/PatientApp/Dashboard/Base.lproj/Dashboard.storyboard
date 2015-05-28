@@ -330,7 +330,7 @@
                                                 <rect key="frame" x="3" y="307" width="594" height="62"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mm Hg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYU-OS-hWd">
-                                                        <rect key="frame" x="111" y="15" width="54" height="22"/>
+                                                        <rect key="frame" x="109" y="15" width="54" height="22"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -384,19 +384,73 @@
                                                     <constraint firstAttribute="trailing" secondItem="4Nk-Ub-DTP" secondAttribute="trailing" constant="3" id="zgA-nh-1E5"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="adc-Fv-jaz" userLabel="Blood Glucose View" customClass="MyPanelView" customModule="PatientApp" customModuleProvider="target">
+                                                <rect key="frame" x="3" y="372" width="594" height="62"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mg/dL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvd-6a-4MW">
+                                                        <rect key="frame" x="111" y="23" width="54" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="blood" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB0-bM-IP5">
+                                                        <rect key="frame" x="2" y="0.0" width="31" height="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="glucose" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TP-UL-0xV">
+                                                        <rect key="frame" x="2" y="10" width="44" height="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="97" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-Db-PCR">
+                                                        <rect key="frame" x="42" y="18" width="57" height="27"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9O-i9-jUH" userLabel="BS Scroll View">
+                                                        <rect key="frame" x="168" y="0.0" width="423" height="62"/>
+                                                        <subviews>
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6uc-2L-bua" userLabel="BS Chart" customClass="TKChart">
+                                                                <rect key="frame" x="0.0" y="0.0" width="1000" height="62"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <gestureRecognizers/>
+                                                            </view>
+                                                        </subviews>
+                                                    </scrollView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(FBG)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFi-Rt-mub">
+                                                        <rect key="frame" x="2" y="24" width="44" height="14"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="N9O-i9-jUH" secondAttribute="bottom" id="DcI-5I-pZW"/>
+                                                    <constraint firstItem="N9O-i9-jUH" firstAttribute="top" secondItem="adc-Fv-jaz" secondAttribute="top" id="f74-4W-t83"/>
+                                                    <constraint firstItem="N9O-i9-jUH" firstAttribute="leading" secondItem="adc-Fv-jaz" secondAttribute="leading" constant="168" id="iF2-m3-DCO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="N9O-i9-jUH" secondAttribute="trailing" constant="3" id="z1e-zO-lzu"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="adc-Fv-jaz" secondAttribute="trailing" constant="3" id="0ET-Kf-Bxm"/>
                                             <constraint firstAttribute="trailing" secondItem="KN9-iE-vZS" secondAttribute="trailing" constant="3" id="0pi-iW-AYe"/>
                                             <constraint firstItem="Xwe-8m-fle" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="5" id="7NE-7Y-9YA"/>
                                             <constraint firstItem="Xwe-8m-fle" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="8bh-o1-2uh"/>
                                             <constraint firstItem="KN9-iE-vZS" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="307" id="Aw1-Rw-4GP"/>
+                                            <constraint firstItem="adc-Fv-jaz" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="372" id="FrH-5t-Qhq"/>
                                             <constraint firstItem="1ur-0e-qSs" firstAttribute="top" secondItem="Xwe-8m-fle" secondAttribute="bottom" constant="3" id="HWV-mw-qMn"/>
                                             <constraint firstItem="BUz-aA-ojB" firstAttribute="top" secondItem="FeR-XL-Wxn" secondAttribute="top" constant="242" id="J07-Lv-Vw6"/>
                                             <constraint firstItem="BUz-aA-ojB" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="LAy-R4-gzO"/>
                                             <constraint firstItem="KN9-iE-vZS" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="Pyv-IN-Um5"/>
                                             <constraint firstAttribute="trailing" secondItem="Xwe-8m-fle" secondAttribute="trailing" constant="3" id="Xaz-MP-2nW"/>
                                             <constraint firstAttribute="trailing" secondItem="2TN-ak-luD" secondAttribute="trailing" constant="3" id="fa6-5h-Rpn"/>
+                                            <constraint firstItem="adc-Fv-jaz" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="gbR-J9-J9N"/>
                                             <constraint firstItem="2TN-ak-luD" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="plC-iq-4ws"/>
                                             <constraint firstItem="1ur-0e-qSs" firstAttribute="leading" secondItem="FeR-XL-Wxn" secondAttribute="leading" constant="3" id="qPI-1p-J1j"/>
                                             <constraint firstAttribute="trailing" secondItem="1ur-0e-qSs" secondAttribute="trailing" constant="3" id="rpP-X2-ZLm"/>
@@ -427,6 +481,8 @@
                     <connections>
                         <outlet property="BodyTemperatureHistoryScrollView" destination="ryZ-ou-hx1" id="AxB-ns-OMK"/>
                         <outlet property="EcgHistoryScrollView" destination="4aC-2F-Mxl" id="3HE-KA-DmD"/>
+                        <outlet property="bloodGlucoseHistoryChart" destination="6uc-2L-bua" id="xIe-cg-8sz"/>
+                        <outlet property="bloodGlucoseHistoryScrollView" destination="N9O-i9-jUH" id="xun-Vf-Pir"/>
                         <outlet property="bloodPressureHistoryChart" destination="3ME-Mh-kI8" id="VG1-me-lZ5"/>
                         <outlet property="bloodPressureHistoryScrollView" destination="4Nk-Ub-DTP" id="BxH-Go-TvM"/>
                         <outlet property="bodyTemperatureHistoryChart" destination="VPL-Qt-XFa" id="i2H-Nf-APO"/>

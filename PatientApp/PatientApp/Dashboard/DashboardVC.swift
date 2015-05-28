@@ -28,6 +28,7 @@ class DashboardVC: UIViewController {
         setupBodyTemperatureHistoryChart()
         setupSpO2HistoryChart()
         setupBloodPressureHistoryChart()
+        setupBloodGlucoseHistoryChart()
         
         // Do any additional setup after loading the view.
     }
@@ -379,12 +380,104 @@ class DashboardVC: UIViewController {
         self.bloodPressureHistoryChart.yAxis = yAxis
         
         
-        
     }
 
     
     
+    //  ====  BLOOD GLUCOSE ==========
     
+    
+    @IBOutlet weak var bloodGlucoseHistoryScrollView: UIScrollView!
+    @IBOutlet weak var bloodGlucoseHistoryChart: TKChart!
+    
+    func setupBloodGlucoseHistoryChart() {
+        
+        self.bloodGlucoseHistoryScrollView.contentSize.width = 1000
+        self.bloodGlucoseHistoryScrollView.setContentOffset(CGPointMake(950, 0), animated: true)
+        
+        var normalValueDataPoints = [TKChartDataPoint]()
+        var highValueDataPoints = [TKChartDataPoint]()
+        
+        let normalValues = [75, 70, 80, 85, 0, 90, 100, 110, 0 , 90, 0, 95, 95, 90, 85]
+        
+        for var repeat=0 ; repeat<6; ++repeat {
+            for var i = 0; i < normalValues.count; ++i {
+                normalValueDataPoints.append(TKChartDataPoint(x: normalValueDataPoints.count, y: normalValues[i]))
+            }
+        }
+        
+        let highValues = [0, 0, 0, 0, 125, 0, 0, 0, 121, 0, 130, 0, 0, 0, 0]
+        
+        for var repeat=0 ; repeat<6; ++repeat {
+            for var i = 0; i < highValues.count; ++i {
+                highValueDataPoints.append(TKChartDataPoint(x: highValueDataPoints.count, y: highValues[i]))
+            }
+        }
+        
+        let stackInfo = TKChartStackInfo(ID: 1, withStackMode: TKChartStackMode.Stack)
+        
+        let seriesNormal = TKChartColumnSeries(items: normalValueDataPoints)
+        seriesNormal.stackInfo = stackInfo
+        seriesNormal.minColumnWidth = 7
+        seriesNormal.maxColumnWidth = 7
+        
+        seriesNormal.style.palette = TKChartPalette()
+        let paletteItemNormal = TKChartPaletteItem()
+        paletteItemNormal.fill = TKSolidFill(color: UIColor(red: 76.0 / 255.0, green: 175.0 / 255.0, blue: 80.0 / 255.0, alpha: 1))
+        paletteItemNormal.stroke = TKStroke(color: UIColor(red: 102.0 / 255.0, green: 187.0 / 255.0, blue: 106.0 / 255.0, alpha: 1))
+        seriesNormal.style.palette.addPaletteItem(paletteItemNormal)
+        
+        self.bloodGlucoseHistoryChart.addSeries(seriesNormal)
+        
+        
+        let seriesHigh = TKChartColumnSeries(items: highValueDataPoints)
+        seriesHigh.stackInfo = stackInfo
+        seriesHigh.minColumnWidth = 7
+        seriesHigh.maxColumnWidth = 7
+        
+        seriesHigh.style.palette = TKChartPalette()
+        let paletteItemHigh = TKChartPaletteItem()
+        paletteItemHigh.fill = TKSolidFill(color: UIColor.orangeColor())
+        paletteItemHigh.stroke = TKStroke(color: UIColor.orangeColor())
+        seriesHigh.style.palette.addPaletteItem(paletteItemHigh)
+        
+        self.bloodGlucoseHistoryChart.addSeries(seriesHigh)
+        
+        let xAxis = TKChartNumericAxis(minimum: -1, andMaximum: 90)
+        xAxis.position = TKChartAxisPosition.Bottom
+        xAxis.style.lineHidden = true
+        xAxis.style.majorTickStyle.ticksHidden = true
+        xAxis.style.labelStyle.textHidden = true
+        self.bloodGlucoseHistoryChart.xAxis = xAxis
+        
+        var maxTemp : Int = 0
+        maxTemp = maxElement(highValues)
+        if maxTemp == 0 {let maxTemp = maxElement(normalValues)}
+        
+        var minTemp : Int = 1000;
+        
+        for var i = 0; i < normalValues.count; ++i {
+            if (normalValues[i]>0) && (normalValues[i]<minTemp) {minTemp = normalValues[i]}
+        }
+        
+        if minTemp==1000 {
+            for var i = 0; i < normalValues.count; ++i {
+                if (highValues[i]>0) && (highValues[i]<minTemp) {minTemp = highValues[i]}
+            }
+        }
+        
+        minTemp = minTemp - 2;
+        
+        let yAxis = TKChartNumericAxis(minimum: minTemp, andMaximum: maxTemp)
+        yAxis.position = TKChartAxisPosition.Left
+        yAxis.style.lineHidden = true
+        yAxis.style.majorTickStyle.ticksHidden = true
+        yAxis.style.labelStyle.textHidden = true
+        self.bloodGlucoseHistoryChart.yAxis = yAxis
+        
+    }
+    
+
     
     
     
