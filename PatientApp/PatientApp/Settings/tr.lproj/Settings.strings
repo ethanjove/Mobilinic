@@ -2,6 +2,9 @@
 /* Class = "UILabel"; text = "Hatırlatmalar"; ObjectID = "0SO-vB-ixT"; */
 "0SO-vB-ixT.text" = "Hatırlatmalar";
 
+/* Class = "UILabel"; text = "Language"; ObjectID = "14h-CR-fWT"; */
+"14h-CR-fWT.text" = "Dil (Language)";
+
 /* Class = "UITextField"; placeholder = "İl"; ObjectID = "1Fw-Ip-jQy"; */
 "1Fw-Ip-jQy.placeholder" = "İl";
 
@@ -23,7 +26,7 @@
 /* Class = "UILabel"; text = "---"; ObjectID = "7HH-Re-gex"; */
 "7HH-Re-gex.text" = "---";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "8M6-yh-W6Z"; */
+/* Class = "UILabel"; text = "Hitap"; ObjectID = "8M6-yh-W6Z"; */
 "8M6-yh-W6Z.text" = "Hitap";
 
 /* Class = "UILabel"; text = "Hasta"; ObjectID = "9Gx-f4-g30"; */
@@ -56,7 +59,7 @@
 /* Class = "UILabel"; text = "Hastane"; ObjectID = "E4Q-U9-NIN"; */
 "E4Q-U9-NIN.text" = "Hastane";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "EfO-wg-3JG"; */
+/* Class = "UILabel"; text = "Hitap"; ObjectID = "EfO-wg-3JG"; */
 "EfO-wg-3JG.text" = "Hitap";
 
 /* Class = "UITextField"; placeholder = "Ev Telefonu"; ObjectID = "FF3-zR-ldc"; */

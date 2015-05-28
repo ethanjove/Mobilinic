@@ -1,11 +1,21 @@
+
 /* Class = "UINavigationItem"; title = "Dashboard"; ObjectID = "2Hp-7R-Bn5"; */
 "2Hp-7R-Bn5.title" = "Durum";
 
-/* Class = "UILabel"; text = "ecg"; ObjectID = "3oR-Yx-dYE"; */
-"3oR-Yx-dYE.text" = "ekg";
+/* Class = "UILabel"; text = "body temp"; ObjectID = "2za-dn-P4P"; */
+"2za-dn-P4P.text" = "vücut ısısı";
 
-/* Class = "UIButton"; normalTitle = "Fast"; ObjectID = "5Bt-DY-2IX"; */
-"5Bt-DY-2IX.normalTitle" = "Fast";
+/* Class = "UILabel"; text = "54"; ObjectID = "39E-Y9-d1d"; */
+"39E-Y9-d1d.text" = "54";
+
+/* Class = "UILabel"; text = "heart rate"; ObjectID = "3oR-Yx-dYE"; */
+"3oR-Yx-dYE.text" = "nabız";
+
+/* Class = "UIButton"; normalTitle = "F"; ObjectID = "5Bt-DY-2IX"; */
+"5Bt-DY-2IX.normalTitle" = "H";
+
+/* Class = "UILabel"; text = "glucose"; ObjectID = "5TP-UL-0xV"; */
+"5TP-UL-0xV.text" = "şekeri";
 
 /* Class = "UILabel"; text = "min"; ObjectID = "5dE-tu-usY"; */
 "5dE-tu-usY.text" = "min";
@@ -13,8 +23,17 @@
 /* Class = "UILabel"; text = "89"; ObjectID = "9l5-c3-5qF"; */
 "9l5-c3-5qF.text" = "89";
 
-/* Class = "UILabel"; text = "54"; ObjectID = "39E-Y9-d1d"; */
-"39E-Y9-d1d.text" = "54";
+/* Class = "UILabel"; text = "QT"; ObjectID = "CYn-DW-45s"; */
+"CYn-DW-45s.text" = "QT";
+
+/* Class = "UILabel"; text = "mg/dL"; ObjectID = "Cvd-6a-4MW"; */
+"Cvd-6a-4MW.text" = "mg/dL";
+
+/* Class = "UILabel"; text = "spO"; ObjectID = "FE3-8W-2IX"; */
+"FE3-8W-2IX.text" = "spO";
+
+/* Class = "UILabel"; text = "95.1"; ObjectID = "Fdt-Bc-Pyr"; */
+"Fdt-Bc-Pyr.text" = "95.1";
 
 /* Class = "UILabel"; text = "99.7"; ObjectID = "Hs6-Gn-dt9"; */
 "Hs6-Gn-dt9.text" = "99.7";
@@ -25,39 +44,95 @@
 /* Class = "UILabel"; text = "61"; ObjectID = "JHJ-E9-qtV"; */
 "JHJ-E9-qtV.text" = "61";
 
-/* Class = "UILabel"; text = "bpm"; ObjectID = "JgW-Iv-vEp"; */
+/* Class = "UILabel"; text = "atım/dk"; ObjectID = "JgW-Iv-vEp"; */
 "JgW-Iv-vEp.text" = "atım/dk";
 
-/* Class = "UILabel"; text = "I"; ObjectID = "KRT-IM-sbZ"; */
-"KRT-IM-sbZ.text" = "I";
+/* Class = "UILabel"; text = "%"; ObjectID = "L9r-gb-Otf"; */
+"L9r-gb-Otf.text" = "%";
 
-/* Class = "UIButton"; normalTitle = "Slow"; ObjectID = "N0c-pE-h8h"; */
-"N0c-pE-h8h.normalTitle" = "Slow";
+/* Class = "UILabel"; text = "0.85"; ObjectID = "MpR-rv-8l6"; */
+"MpR-rv-8l6.text" = "0.85";
+
+/* Class = "UIButton"; normalTitle = "Y"; ObjectID = "N0c-pE-h8h"; */
+"N0c-pE-h8h.normalTitle" = "Y";
+
+/* Class = "UILabel"; text = "94.3"; ObjectID = "Op0-NC-9MT"; */
+"Op0-NC-9MT.text" = "94.3";
 
 /* Class = "UILabel"; text = "97.1"; ObjectID = "OpK-BV-mNT"; */
 "OpK-BV-mNT.text" = "97.1";
 
-/* Class = "UILabel"; text = "ºF"; ObjectID = "Rlp-UH-1oe"; */
+/* Class = "UILabel"; text = "mm Hg"; ObjectID = "RYU-OS-hWd"; */
+"RYU-OS-hWd.text" = "mm Hg";
+
+/* Class = "UILabel"; text = "ºC"; ObjectID = "Rlp-UH-1oe"; */
 "Rlp-UH-1oe.text" = "ºC";
 
-/* Class = "UIButton"; normalTitle = "Normal"; ObjectID = "oWa-sy-643"; */
-"oWa-sy-643.normalTitle" = "Normal";
+/* Class = "UILabel"; text = "97"; ObjectID = "VPb-Db-PCR"; */
+"VPb-Db-PCR.text" = "97";
+
+/* Class = "UILabel"; text = "blood"; ObjectID = "XGO-x7-dEd"; */
+"XGO-x7-dEd.text" = "tansiyon";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "XuR-fm-IeB"; */
+"XuR-fm-IeB.text" = "2";
+
+/* Class = "UILabel"; text = "76"; ObjectID = "aGP-cp-bOY"; */
+"aGP-cp-bOY.text" = "76";
+
+/* Class = "UILabel"; text = "pressure"; ObjectID = "aQO-FN-lPr"; */
+"aQO-FN-lPr.text" = "";
+
+/* Class = "UILabel"; text = "blood"; ObjectID = "cB0-bM-IP5"; */
+"cB0-bM-IP5.text" = "kan";
+
+/* Class = "UILabel"; text = "95.2"; ObjectID = "eei-Hm-3Ga"; */
+"eei-Hm-3Ga.text" = "95.2";
+
+/* Class = "UILabel"; text = "0.41"; ObjectID = "f76-sF-U8c"; */
+"f76-sF-U8c.text" = "0.41";
+
+/* Class = "UILabel"; text = "PR"; ObjectID = "fWR-Bq-3bP"; */
+"fWR-Bq-3bP.text" = "PR";
+
+/* Class = "UILabel"; text = "ecg"; ObjectID = "jXb-TQ-JLs"; */
+"jXb-TQ-JLs.text" = "ekg";
+
+/* Class = "UIButton"; normalTitle = "N"; ObjectID = "oWa-sy-643"; */
+"oWa-sy-643.normalTitle" = "N";
+
+/* Class = "UILabel"; text = "0.15"; ObjectID = "pmU-kQ-whN"; */
+"pmU-kQ-whN.text" = "0.15";
+
+/* Class = "UILabel"; text = "QRS"; ObjectID = "qDm-xm-KZX"; */
+"qDm-xm-KZX.text" = "QRS";
 
 /* Class = "UILabel"; text = "max"; ObjectID = "qMS-m8-ajn"; */
-"qMS-m8-ajn.text" = "mak";
+"qMS-m8-ajn.text" = "max";
 
-/* Class = "UILabel"; text = "Dashboard"; ObjectID = "rgV-7y-4p5"; */
-"rgV-7y-4p5.text" = "Durum";
+/* Class = "UILabel"; text = "96.2"; ObjectID = "sla-JP-bhs"; */
+"sla-JP-bhs.text" = "96.2";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "syl-eC-lpS"; */
+"syl-eC-lpS.normalTitle" = "Button";
 
 /* Class = "UINavigationItem"; title = "ECG"; ObjectID = "uAL-nS-kOc"; */
 "uAL-nS-kOc.title" = "EKG";
 
+/* Class = "UILabel"; text = "______"; ObjectID = "v5d-1i-sTg"; */
+"v5d-1i-sTg.text" = "______";
+
 /* Class = "UILabel"; text = "62"; ObjectID = "wTt-6X-0uA"; */
 "wTt-6X-0uA.text" = "62";
+
+/* Class = "UILabel"; text = "(FBG)"; ObjectID = "xFi-Rt-mub"; */
+"xFi-Rt-mub.text" = "(açlık)";
 
 /* Class = "UILabel"; text = "avg"; ObjectID = "xrx-Qg-3LS"; */
 "xrx-Qg-3LS.text" = "ort";
 
+/* Class = "UILabel"; text = "117"; ObjectID = "yy3-2n-QpT"; */
+"yy3-2n-QpT.text" = "117";
+
 /* Class = "UILabel"; text = "94.2"; ObjectID = "ziP-Cq-nGx"; */
 "ziP-Cq-nGx.text" = "94.2";
-

@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "Daily Remainders"; ObjectID = "0SO-vB-ixT"; */
-"0SO-vB-ixT.text" = "Günlük Hatırlatma";
+"0SO-vB-ixT.text" = "Hatırlatmalar";
 
 /* Class = "UITextField"; placeholder = "State"; ObjectID = "1Fw-Ip-jQy"; */
 "1Fw-Ip-jQy.placeholder" = "State";
@@ -54,7 +54,7 @@
 "Cnm-JB-Gc9.segmentTitles[3]" = "0";
 
 /* Class = "UILabel"; text = "Body Temperature"; ObjectID = "E4Q-U9-NIN"; */
-"E4Q-U9-NIN.text" = "Vücüt Sıcaklığı";
+"E4Q-U9-NIN.text" = "Vücüt Isısı";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "EfO-wg-3JG"; */
 "EfO-wg-3JG.text" = "Title";
@@ -89,11 +89,14 @@
 /* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "KvI-Kq-lNK"; */
 "KvI-Kq-lNK.headerTitle" = " ";
 
+/* Class = "UILabel"; text = "Blood Pressure"; ObjectID = "KvL-Bd-LGI"; */
+"KvL-Bd-LGI.text" = "Tansiyon";
+
 /* Class = "UITextField"; placeholder = "Zip Code"; ObjectID = "MU0-uN-lNo"; */
 "MU0-uN-lNo.placeholder" = "Zip Code";
 
 /* Class = "UINavigationItem"; title = "Health Data"; ObjectID = "PFQ-Sy-OR3"; */
-"PFQ-Sy-OR3.title" = "Sağlık Verisi";
+"PFQ-Sy-OR3.title" = "Ölçümler";
 
 /* Class = "UILabel"; text = "Gender"; ObjectID = "Q6N-nQ-Q52"; */
 "Q6N-nQ-Q52.text" = "Gender";
@@ -104,8 +107,8 @@
 /* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "SfQ-Is-YuT"; */
 "SfQ-Is-YuT.placeholder" = "Last Name";
 
-/* Class = "UILabel"; text = "Vitals"; ObjectID = "Sg6-Z6-yok"; */
-"Sg6-Z6-yok.text" = "Vitals";
+/* Class = "UILabel"; text = "Heartbeat"; ObjectID = "Sg6-Z6-yok"; */
+"Sg6-Z6-yok.text" = "Nabız";
 
 /* Class = "UITextField"; placeholder = "email address"; ObjectID = "UKZ-C2-HkH"; */
 "UKZ-C2-HkH.placeholder" = "email address";
@@ -168,10 +171,10 @@
 "hff-rW-XaA.placeholder" = "Priority";
 
 /* Class = "UILabel"; text = "Weight"; ObjectID = "iSl-LG-XaN"; */
-"iSl-LG-XaN.text" = "Ağırlık";
+"iSl-LG-XaN.text" = "Kilo";
 
 /* Class = "UILabel"; text = "Nutrition"; ObjectID = "lNu-LA-Ua0"; */
-"lNu-LA-Ua0.text" = "Yiyecek";
+"lNu-LA-Ua0.text" = "Yediklerim";
 
 /* Class = "UITextField"; placeholder = "Street address"; ObjectID = "ldY-s6-Jvv"; */
 "ldY-s6-Jvv.placeholder" = "Street address";

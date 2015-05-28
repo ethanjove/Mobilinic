@@ -120,15 +120,12 @@
 		18572E6D1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18572E6E1B047C7300B09DE5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18572E701B0598F400B09DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
-		18572E731B0598F700B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Dashboard.strings; sourceTree = "<group>"; };
 		18572E771B059C9200B09DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18572E791B059C9400B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		18572EB71B05A51500B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Settings.strings; sourceTree = "<group>"; };
 		18572EB81B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18572EB91B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		18572EBA1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		18572EBB1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Dashboard.strings; sourceTree = "<group>"; };
-		18572EBC1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Settings.strings; sourceTree = "<group>"; };
 		18572EBD1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18572EBE1B05A7B800B09DE5 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		185B31031A99D8AA00273B99 /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableVC.swift; path = Settings/SettingsTableVC.swift; sourceTree = "<group>"; };
@@ -193,10 +190,13 @@
 		18E43C081AA8EF4200E05D22 /* ContactListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactListCell.swift; path = Settings/Contact/ContactListCell.swift; sourceTree = "<group>"; };
 		18E43C0C1AA94E6400E05D22 /* ContactRelationshipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactRelationshipVC.swift; path = Settings/Contact/ContactRelationshipVC.swift; sourceTree = "<group>"; };
 		18EA7F261B16B86600C68080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HealthData.storyboard; sourceTree = "<group>"; };
-		18EA7F291B16B87100C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/HealthData.strings; sourceTree = "<group>"; };
 		18EA7F2B1B16B9AB00C68080 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HealthData.strings; sourceTree = "<group>"; };
 		18EA7F2D1B16B9B400C68080 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/HealthData.strings; sourceTree = "<group>"; };
 		18EA7F2F1B16B9B700C68080 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HealthData.strings; sourceTree = "<group>"; };
+		18EA7F321B16C89600C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/HealthData.strings; sourceTree = "<group>"; };
+		18EA7F341B16CA6000C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Dashboard.strings; sourceTree = "<group>"; };
+		18EA7F361B16D00800C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Settings.strings; sourceTree = "<group>"; };
+		18EA7F381B16D04F00C68080 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Settings.strings; sourceTree = "<group>"; };
 		18EABBBD1AB36238000768D6 /* DashboardNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardNC.swift; path = Dashboard/DashboardNC.swift; sourceTree = "<group>"; };
 		18EABBBF1AB3BF23000768D6 /* MyPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPanelView.swift; path = Common/MyPanelView.swift; sourceTree = "<group>"; };
 		18EB69761AA0163E00D9962C /* Mobilinic.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mobilinic.sqlite; path = LocalDB/Mobilinic.sqlite; sourceTree = "<group>"; };
@@ -718,8 +718,8 @@
 				18572E5A1B04746800B09DE5 /* Base */,
 				18572E691B047C1C00B09DE5 /* en */,
 				18572E6C1B047C7300B09DE5 /* ru */,
-				18572EB71B05A51500B09DE5 /* tr */,
-				18572EBC1B05A7B800B09DE5 /* ar */,
+				18EA7F361B16D00800C68080 /* tr */,
+				18EA7F381B16D04F00C68080 /* ar */,
 			);
 			name = Settings.storyboard;
 			path = Settings;
@@ -749,8 +749,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				18572E701B0598F400B09DE5 /* Base */,
-				18572E731B0598F700B09DE5 /* tr */,
 				18572EBB1B05A7B800B09DE5 /* ar */,
+				18EA7F341B16CA6000C68080 /* tr */,
 			);
 			name = Dashboard.storyboard;
 			path = Dashboard;
@@ -771,10 +771,10 @@
 			isa = PBXVariantGroup;
 			children = (
 				18EA7F261B16B86600C68080 /* Base */,
-				18EA7F291B16B87100C68080 /* tr */,
 				18EA7F2B1B16B9AB00C68080 /* en */,
 				18EA7F2D1B16B9B400C68080 /* ru */,
 				18EA7F2F1B16B9B700C68080 /* ar */,
+				18EA7F321B16C89600C68080 /* tr */,
 			);
 			name = HealthData.storyboard;
 			path = HealthData;

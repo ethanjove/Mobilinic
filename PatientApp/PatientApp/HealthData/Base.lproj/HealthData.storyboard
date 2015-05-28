@@ -1080,7 +1080,7 @@
         <image name="iconLab" width="32" height="35"/>
         <image name="iconLineChart" width="32" height="32"/>
         <image name="iconMetamorphose-25" width="25" height="25"/>
-        <image name="iconPressure" width="32" height="32"/>
+        <image name="iconPressure" width="24" height="24"/>
         <image name="iconSleep" width="31" height="33"/>
         <image name="iconTemperature" width="32" height="32"/>
         <image name="iconToilet" width="32" height="32"/>
