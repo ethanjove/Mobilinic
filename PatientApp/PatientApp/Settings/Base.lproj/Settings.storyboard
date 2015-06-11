@@ -251,7 +251,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="bz6-PQ-fbk">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="bz6-PQ-fbk" userLabel="Language View Cell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bz6-PQ-fbk" id="CMo-Wk-yBM">
@@ -272,6 +272,9 @@
                                                 <constraint firstItem="wnI-x6-LUl" firstAttribute="leading" secondItem="CMo-Wk-yBM" secondAttribute="leadingMargin" constant="6" id="aA3-d6-DiO"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="z7e-9b-6eH" kind="show" id="Zbd-GU-DMl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -315,7 +318,7 @@
             </objects>
             <point key="canvasLocation" x="41" y="-443"/>
         </scene>
-        <!--Patient SettingsVC-->
+        <!--Patient-->
         <scene sceneID="DvJ-Pq-UhC">
             <objects>
                 <tableViewController storyboardIdentifier="PatientSettingsView" id="Rkh-gc-NfR" customClass="PatientSettingsVC" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -624,7 +627,7 @@
                             </tableViewSection>
                         </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4bp-Is-cxV"/>
+                    <navigationItem key="navigationItem" title="Patient" id="4bp-Is-cxV"/>
                     <connections>
                         <outlet property="bloodTypeRhSegment" destination="nyr-JQ-reB" id="7D7-O7-WnY"/>
                         <outlet property="bloodTypeSaveButton" destination="fso-5K-1lj" id="GB9-Os-J7S"/>
@@ -934,6 +937,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LkU-t0-G2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="866" y="1880"/>
+        </scene>
+        <!--Application Language-->
+        <scene sceneID="G86-p2-PrO">
+            <objects>
+                <viewController id="z7e-9b-6eH" customClass="LanguageVC" customModule="PatientApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r4U-7c-cOv"/>
+                        <viewControllerLayoutGuide type="bottom" id="cyg-5s-8NH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ku-T4-KKd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="c03-xB-4cM">
+                                <rect key="frame" x="155" y="0.0" width="290" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="3GM-6F-GFj" detailTextLabel="w8V-0e-Ufm" style="IBUITableViewCellStyleValue1" id="Bv8-ee-BWt">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bv8-ee-BWt" id="lT4-sx-a7J">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3GM-6F-GFj">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w8V-0e-Ufm">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="z7e-9b-6eH" id="Oe8-XC-YSc"/>
+                                    <outlet property="delegate" destination="z7e-9b-6eH" id="uqQ-0k-nnt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="c03-xB-4cM" secondAttribute="centerX" id="au6-1L-mgB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Application Language" id="t6t-5Y-deF"/>
+                    <connections>
+                        <outlet property="tableView" destination="c03-xB-4cM" id="jvP-Rh-jaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VQ-tw-MbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="2566"/>
         </scene>
         <!--Relationship-->
         <scene sceneID="HLK-fz-n5W">

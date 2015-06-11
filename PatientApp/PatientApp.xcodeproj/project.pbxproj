@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183FE2BD1B2A27F900CD327A /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FE2BC1B2A27F900CD327A /* Language.swift */; };
 		18572E591B04746800B09DE5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18572E5B1B04746800B09DE5 /* Settings.storyboard */; };
 		18572E601B0479CE00B09DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18572E621B0479CE00B09DE5 /* InfoPlist.strings */; };
 		18572E651B0479CE00B09DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18572E671B0479CE00B09DE5 /* InfoPlist.strings */; };
@@ -22,6 +23,7 @@
 		185E6DCE1B099C01003F8109 /* BaseDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DCD1B099C01003F8109 /* BaseDashboardView.swift */; };
 		185E6DD21B0AC62E003F8109 /* HealthDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */; };
 		185E6DD41B0AC68F003F8109 /* HealthDataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */; };
+		18632C891B24E95600BB96B2 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632C881B24E95600BB96B2 /* LanguageManager.swift */; };
 		1865B4501A911BF9003FAA89 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865B44F1A911BF9003FAA89 /* MainVC.swift */; };
 		186B86FF1AA69EEA00C0E5DE /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */; };
 		186B87011AA6B69700C0E5DE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B87001AA6B69700C0E5DE /* Contact.swift */; };
@@ -67,6 +69,7 @@
 		18E43C091AA8EF4200E05D22 /* ContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E43C081AA8EF4200E05D22 /* ContactListCell.swift */; };
 		18E43C0D1AA94E6400E05D22 /* ContactRelationshipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E43C0C1AA94E6400E05D22 /* ContactRelationshipVC.swift */; };
 		18EA7F251B16B86600C68080 /* HealthData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EA7F271B16B86600C68080 /* HealthData.storyboard */; };
+		18EA7F3B1B1802A400C68080 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA7F3A1B1802A400C68080 /* LanguageVC.swift */; };
 		18EABBBE1AB36238000768D6 /* DashboardNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EABBBD1AB36238000768D6 /* DashboardNC.swift */; };
 		18EABBC01AB3BF23000768D6 /* MyPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EABBBF1AB3BF23000768D6 /* MyPanelView.swift */; };
 		18EB69781AA01F0700D9962C /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB69771AA01F0700D9962C /* Util.swift */; };
@@ -108,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		183FE2BC1B2A27F900CD327A /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Model/Language.swift; sourceTree = "<group>"; };
 		18572E571B0472DC00B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		18572E581B0472DD00B09DE5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		18572E5A1B04746800B09DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		185E6DCD1B099C01003F8109 /* BaseDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseDashboardView.swift; path = Dashboard/Views/BaseDashboardView.swift; sourceTree = "<group>"; };
 		185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataVC.swift; path = HealthData/HealthDataVC.swift; sourceTree = "<group>"; };
 		185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataTableVC.swift; path = HealthData/HealthDataTableVC.swift; sourceTree = "<group>"; };
+		18632C881B24E95600BB96B2 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 		1865B44F1A911BF9003FAA89 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBar.swift; path = Presentation/Main/MainTabBar.swift; sourceTree = "<group>"; };
 		186B87001AA6B69700C0E5DE /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/Contact.swift; sourceTree = "<group>"; };
@@ -197,6 +202,7 @@
 		18EA7F341B16CA6000C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Dashboard.strings; sourceTree = "<group>"; };
 		18EA7F361B16D00800C68080 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Settings.strings; sourceTree = "<group>"; };
 		18EA7F381B16D04F00C68080 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Settings.strings; sourceTree = "<group>"; };
+		18EA7F3A1B1802A400C68080 /* LanguageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageVC.swift; path = Language/LanguageVC.swift; sourceTree = "<group>"; };
 		18EABBBD1AB36238000768D6 /* DashboardNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardNC.swift; path = Dashboard/DashboardNC.swift; sourceTree = "<group>"; };
 		18EABBBF1AB3BF23000768D6 /* MyPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPanelView.swift; path = Common/MyPanelView.swift; sourceTree = "<group>"; };
 		18EB69761AA0163E00D9962C /* Mobilinic.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mobilinic.sqlite; path = LocalDB/Mobilinic.sqlite; sourceTree = "<group>"; };
@@ -370,6 +376,7 @@
 				185B31091A9B04F100273B99 /* 0.NavigationControllers */,
 				18BAFABC1A9952E300B5556F /* 1.Patient */,
 				18ACECD81AA3C0DA005700BE /* 2.Contact */,
+				18EA7F391B18021500C68080 /* 99. Language */,
 				18572E5B1B04746800B09DE5 /* Settings.storyboard */,
 				18F13F561A91C98700807304 /* SettingsVC.swift */,
 				185B31031A99D8AA00273B99 /* SettingsTableVC.swift */,
@@ -409,6 +416,7 @@
 				186B87001AA6B69700C0E5DE /* Contact.swift */,
 				18BF81461AAA919D003A0B27 /* Relationship.swift */,
 				1875A38F1AAFF3440070367B /* Priority.swift */,
+				183FE2BC1B2A27F900CD327A /* Language.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -429,6 +437,7 @@
 				18E43C041AA7FCC400E05D22 /* ContactManager.swift */,
 				18BF81491AAA94B9003A0B27 /* RelationshipManager.swift */,
 				1875A3911AAFF39D0070367B /* PriorityManager.swift */,
+				18632C881B24E95600BB96B2 /* LanguageManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -449,6 +458,14 @@
 				18E000CF1A9FFE23005A228C /* FMResultSet.m */,
 			);
 			name = fmdb;
+			sourceTree = "<group>";
+		};
+		18EA7F391B18021500C68080 /* 99. Language */ = {
+			isa = PBXGroup;
+			children = (
+				18EA7F3A1B1802A400C68080 /* LanguageVC.swift */,
+			);
+			name = "99. Language";
 			sourceTree = "<group>";
 		};
 		18F80AB21AA1485700BA2AF0 /* Presentation */ = {
@@ -655,6 +672,7 @@
 				18E000D21A9FFE23005A228C /* FMDatabasePool.m in Sources */,
 				18EABBBE1AB36238000768D6 /* DashboardNC.swift in Sources */,
 				18EABBC01AB3BF23000768D6 /* MyPanelView.swift in Sources */,
+				18632C891B24E95600BB96B2 /* LanguageManager.swift in Sources */,
 				18E000D01A9FFE23005A228C /* FMDatabase.m in Sources */,
 				18BAFAC01A9953A100B5556F /* PatientSettingsVC.swift in Sources */,
 				18EB69781AA01F0700D9962C /* Util.swift in Sources */,
@@ -666,6 +684,7 @@
 				18E000D11A9FFE23005A228C /* FMDatabaseAdditions.m in Sources */,
 				18F80AB71AA1973700BA2AF0 /* FMDatabaseVariadic.swift in Sources */,
 				18E43C0D1AA94E6400E05D22 /* ContactRelationshipVC.swift in Sources */,
+				18EA7F3B1B1802A400C68080 /* LanguageVC.swift in Sources */,
 				18E43BFF1AA7F79A00E05D22 /* ContactDetailsVC.swift in Sources */,
 				185E6DD21B0AC62E003F8109 /* HealthDataVC.swift in Sources */,
 				18B721EE1A95BC3E00B3CF72 /* MyDatePickerView.swift in Sources */,
@@ -684,6 +703,7 @@
 				18E000D31A9FFE23005A228C /* FMDatabaseQueue.m in Sources */,
 				1875A3961AB264960070367B /* Bridge.m in Sources */,
 				185B31111A9ECAA800273B99 /* MyBaseTableViewCell.swift in Sources */,
+				183FE2BD1B2A27F900CD327A /* Language.swift in Sources */,
 				18E000D41A9FFE23005A228C /* FMResultSet.m in Sources */,
 				18BF81471AAA919D003A0B27 /* Relationship.swift in Sources */,
 				18F13F4B1A91905B00807304 /* StoryboardManager.swift in Sources */,
