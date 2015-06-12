@@ -8,14 +8,9 @@
 
 import UIKit
 
-protocol LanguageVCDelegate {
-    func languageSelected(controller:LanguageVC, languageID: Int, languageCode:String)
-}
-
 
 class LanguageVC: UIViewController,UITableViewDelegate {
 
-    var delegate:LanguageVCDelegate? = nil
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -66,9 +61,19 @@ class LanguageVC: UIViewController,UITableViewDelegate {
         let lanID = indexPath.row;
         let lanCode = languages[lanID].code;
         
-        if (delegate != nil) {
-            delegate!.languageSelected(self, languageID: lanID, languageCode: lanCode)
-        }
+        NSUserDefaults.standardUserDefaults().setObject([lanCode], forKey: "AppleLanguages")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        var languageAlert = UIAlertController(title: "Language", message: "To apply the language changes, terminate the application and restart it again.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        languageAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+            
+        }))
+        
+
+        
+        presentViewController(languageAlert, animated: true, completion: nil)
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
 
