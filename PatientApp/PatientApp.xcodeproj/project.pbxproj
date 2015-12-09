@@ -24,6 +24,8 @@
 		185E6DD21B0AC62E003F8109 /* HealthDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */; };
 		185E6DD41B0AC68F003F8109 /* HealthDataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */; };
 		18632C891B24E95600BB96B2 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18632C881B24E95600BB96B2 /* LanguageManager.swift */; };
+		18642CC11B2A684F007B2C1E /* LanguageChangeAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642CC01B2A684F007B2C1E /* LanguageChangeAlertVC.swift */; };
+		18642CC31B2A8339007B2C1E /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18642CC21B2A8339007B2C1E /* MyAlertView.swift */; };
 		1865B4501A911BF9003FAA89 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865B44F1A911BF9003FAA89 /* MainVC.swift */; };
 		186B86FF1AA69EEA00C0E5DE /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */; };
 		186B87011AA6B69700C0E5DE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B87001AA6B69700C0E5DE /* Contact.swift */; };
@@ -143,6 +145,8 @@
 		185E6DD11B0AC62E003F8109 /* HealthDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataVC.swift; path = HealthData/HealthDataVC.swift; sourceTree = "<group>"; };
 		185E6DD31B0AC68F003F8109 /* HealthDataTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthDataTableVC.swift; path = HealthData/HealthDataTableVC.swift; sourceTree = "<group>"; };
 		18632C881B24E95600BB96B2 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		18642CC01B2A684F007B2C1E /* LanguageChangeAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageChangeAlertVC.swift; path = Language/LanguageChangeAlertVC.swift; sourceTree = "<group>"; };
+		18642CC21B2A8339007B2C1E /* MyAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyAlertView.swift; path = Common/MyAlertView.swift; sourceTree = "<group>"; };
 		1865B44F1A911BF9003FAA89 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		186B86FE1AA69EEA00C0E5DE /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBar.swift; path = Presentation/Main/MainTabBar.swift; sourceTree = "<group>"; };
 		186B87001AA6B69700C0E5DE /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/Contact.swift; sourceTree = "<group>"; };
@@ -404,6 +408,7 @@
 				18B721EF1A95BC7100B3CF72 /* MyDatePickerView.xib */,
 				18EB69771AA01F0700D9962C /* Util.swift */,
 				18EABBBF1AB3BF23000768D6 /* MyPanelView.swift */,
+				18642CC21B2A8339007B2C1E /* MyAlertView.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				18EA7F3A1B1802A400C68080 /* LanguageVC.swift */,
+				18642CC01B2A684F007B2C1E /* LanguageChangeAlertVC.swift */,
 			);
 			name = "99. Language";
 			sourceTree = "<group>";
@@ -587,6 +593,8 @@
 		18FA982D1A8E5CDE008F7CDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Mobilinic;
 				TargetAttributes = {
@@ -664,8 +672,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				185E6DCE1B099C01003F8109 /* BaseDashboardView.swift in Sources */,
+				18642CC11B2A684F007B2C1E /* LanguageChangeAlertVC.swift in Sources */,
 				18E43C051AA7FCC400E05D22 /* ContactManager.swift in Sources */,
 				185B310F1A9ECA6F00273B99 /* MyBaseViewController.swift in Sources */,
+				18642CC31B2A8339007B2C1E /* MyAlertView.swift in Sources */,
 				18F13F551A91C96F00807304 /* CommunityVC.swift in Sources */,
 				1875A3921AAFF39D0070367B /* PriorityManager.swift in Sources */,
 				185B312C1A9EE63C00273B99 /* DatabaseManager.swift in Sources */,
